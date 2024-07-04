@@ -1,0 +1,4194 @@
+{
+  "status": 1,
+  "data": {
+    "_id": "6683872fe65b9143ba27f48e",
+    "first_time": true,
+    "exercise_sheet": {
+      "_id": "6683701d6a4a8d6d2444d6c5",
+      "name": "[Toán] Dãy số - Cấp số cộng - Cấp số nhân",
+      "total": 25,
+      "end_submit_date": "2024-07-09T14:00:00.000Z"
+    },
+    "user": {
+      "id": "6650153afdb622f0e30a23ee",
+      "username": "dunghayho0983"
+    },
+    "state": 2,
+    "learning_time": 0,
+    "total_done": 10,
+    "total_correct": 11,
+    "session": "1h3yp2ddmly3xl37v",
+    "questions": [
+      {
+        "_id": "641c1a672c568f24d173b3df",
+        "chapter": {
+          "id": "62d639b85249027d2ed284c1",
+          "name": "Dãy số"
+        },
+        "parent": {
+          "id": ""
+        },
+        "question_style": {
+          "general": 1,
+          "mobile": 1
+        },
+        "content_type": 2,
+        "question_type": 1,
+        "difficult_degree": 2,
+        "question": {
+          "id": "2",
+          "content": [
+            {
+              "type": "html",
+              "content": "<p>Cho d&atilde;y số $\\left(a_n\\right)$ c&oacute; $a_n=-n^2+4 n+11, \\forall n \\in \\mathbb{N}^*$. T&igrave;m số hạng lớn nhất của d&atilde;y số $\\left(a_n\\right)$.</p>"
+            }
+          ],
+          "answers": [
+            {
+              "id": "3",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "<p>14 .</p>"
+                }
+              ],
+              "answer_key": "a",
+              "correct": false,
+              "question": "2"
+            },
+            {
+              "id": "4",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "<p>15 .</p>"
+                }
+              ],
+              "answer_key": "b",
+              "correct": true,
+              "question": "2",
+              "selected": true
+            },
+            {
+              "id": "5",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "<p>13 .</p>"
+                }
+              ],
+              "answer_key": "c",
+              "correct": false,
+              "question": "2"
+            },
+            {
+              "id": "6",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "<p>12 .</p>"
+                }
+              ],
+              "answer_key": "d",
+              "correct": false,
+              "question": "2"
+            }
+          ],
+          "quiz": "1",
+          "user_answer": {
+            "answer_choice": "b",
+            "result": true
+          }
+        },
+        "solution_suggesstion": [
+          {
+            "type": "html",
+            "content": "<p>Sử dụng hằng đẳng thức</p>"
+          }
+        ],
+        "related_lesson": [],
+        "solution_detail": [
+          {
+            "type": "html",
+            "content": "<p>Ta c&oacute; $a_n=-(n-2)^2+15 \\leq 15, \\forall n \\geq 1$. Dấu bằng xảy ra khi $n-2=0 \\Leftrightarrow n=2$.</p>\n<p>Vậy số hạng lớn nhất của d&atilde;y số l&agrave; số hạng bằng 15 .</p>"
+          }
+        ],
+        "note": [],
+        "group_id": "641c1a672c568f24d173b3e1",
+        "order": 14,
+        "sub_order": 1,
+        "idx": 165156
+      },
+      {
+        "_id": "6454bf1a011201043df1e790",
+        "chapter": {
+          "id": "62d639b85249027d2ed284c1",
+          "name": "Dãy số"
+        },
+        "parent": {
+          "id": ""
+        },
+        "question_style": {
+          "general": 1,
+          "mobile": 1
+        },
+        "content_type": 2,
+        "question_type": 1,
+        "difficult_degree": 2,
+        "question": {
+          "id": "2",
+          "content": [
+            {
+              "type": "html",
+              "content": "<p>Cho d&atilde;y số \\(\\left( {{u_n}} \\right)\\) với \\({u_n} = \\dfrac{1}{{1.2}} + \\dfrac{1}{{2.3}} + ... + \\dfrac{1}{{n\\left( {n + 1} \\right)}},{\\mkern 1mu} {\\kern 1pt} n \\in {\\mathbb{N}^*}\\). Khẳng định n&agrave;o dưới đ&acirc;y <strong><em>đ&uacute;ng</em></strong>?</p>"
+            }
+          ],
+          "answers": [
+            {
+              "id": "3",
+              "text": [
+                {
+                  "type": "html",
+                  "content": " Dãy số \\(\\left( {{u_n}} \\right)\\) là dãy số giảm."
+                }
+              ],
+              "answer_key": "a",
+              "correct": false,
+              "question": "2"
+            },
+            {
+              "id": "4",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "Dãy số \\(\\left( {{u_n}} \\right)\\) là dãy số không bị chặn dưới."
+                }
+              ],
+              "answer_key": "b",
+              "correct": false,
+              "question": "2"
+            },
+            {
+              "id": "5",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "<p>D&atilde;y số \\(\\left( {{u_n}} \\right)\\) l&agrave; d&atilde;y số tăng v&agrave; bị chặn.</p>"
+                }
+              ],
+              "answer_key": "c",
+              "correct": true,
+              "question": "2",
+              "selected": true
+            },
+            {
+              "id": "6",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "<p>D&atilde;y số \\(\\left( {{u_n}} \\right)\\) l&agrave; d&atilde;y số tăng v&agrave; kh&ocirc;ng bị chặn.</p>"
+                }
+              ],
+              "answer_key": "d",
+              "correct": false,
+              "question": "2"
+            }
+          ],
+          "quiz": "1",
+          "user_answer": {
+            "answer_choice": "c",
+            "result": true
+          }
+        },
+        "solution_suggesstion": [
+          {
+            "type": "html",
+            "content": "<p>Đ&aacute;nh gi&aacute; $u_n$</p>"
+          }
+        ],
+        "related_lesson": [
+          {
+            "relate_concept_id": "11228",
+            "relate_alias": "Dãy số bị chặn"
+          }
+        ],
+        "solution_detail": [
+          {
+            "type": "html",
+            "content": "<p><span class=\"MTConvertedEquation\">\\(\\begin{array}{l}{u_n} = \\dfrac{1}{{1.2}} + \\dfrac{1}{{2.3}} + ... + \\dfrac{1}{{n\\left( {n + 1} \\right)}}\\\\ = 1 - \\dfrac{1}{2} + \\dfrac{1}{2} - \\dfrac{1}{3} + ... + \\dfrac{1}{n} - \\dfrac{1}{{n + 1}}\\\\ = 1 - \\dfrac{1}{{n + 1}} \\le 1\\forall n \\in {\\mathbb{N}^*}\\end{array}\\)</span></p>\n<p>M&agrave; <span class=\"MTConvertedEquation\">\\(n + 1 \\ge 2 \\Rightarrow \\dfrac{1}{{n + 1}} \\le \\dfrac{1}{2} \\Rightarrow 1 - \\dfrac{1}{{n + 1}} \\ge \\dfrac{1}{2}\\)</span></p>\n<p>=&gt; D&atilde;y số bị chặn</p>\n<p>Mặt kh&aacute;c,&nbsp;<span class=\"MTConvertedEquation\">\\({u_{n + 1}} = 1 - \\dfrac{1}{{n + 2}} &gt; 1 - \\dfrac{1}{{n + 1}} = {u_n}\\)</span>=&gt; D&atilde;y số tăng.</p>"
+          }
+        ],
+        "note": [],
+        "group_id": "62d655ff0378c97d2e577114",
+        "sub_order": 3,
+        "idx": 166551
+      },
+      {
+        "_id": "6466edfcd0487344f4031cc1",
+        "chapter": {
+          "id": "62d639b85249027d2ed284c1",
+          "name": "Dãy số"
+        },
+        "parent": {
+          "id": ""
+        },
+        "question_style": {
+          "general": 1,
+          "mobile": 1
+        },
+        "content_type": 2,
+        "question_type": 1,
+        "difficult_degree": 2,
+        "question": {
+          "id": "2",
+          "content": [
+            {
+              "type": "html",
+              "content": "<p> Cho dãy số $\\left(u_n\\right)$, với $u_n=\\dfrac{1}{2^2}+\\dfrac{1}{3^2}+\\ldots+\\dfrac{1}{n^2}, \\forall n=2 ; 3 ; 4 ; \\cdots$. Mệnh đề nào sau đây đúng?</p>"
+            }
+          ],
+          "answers": [
+            {
+              "id": "3",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "Dãy số $\\left(u_n\\right)$ bị chặn trên và không bị chặn dưới."
+                }
+              ],
+              "answer_key": "a",
+              "correct": false
+            },
+            {
+              "id": "4",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "Dãy số $\\left(u_n\\right)$ bị chặn dưới và không bị chặn trên."
+                }
+              ],
+              "answer_key": "b",
+              "correct": false
+            },
+            {
+              "id": "5",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "Dãy số $\\left(u_n\\right)$ bị chặn."
+                }
+              ],
+              "answer_key": "c",
+              "correct": true,
+              "selected": true
+            },
+            {
+              "id": "6",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "Dãy số $\\left(u_n\\right)$ không bị chặn."
+                }
+              ],
+              "answer_key": "d",
+              "correct": false
+            }
+          ],
+          "user_answer": {
+            "answer_choice": "c",
+            "result": true
+          }
+        },
+        "solution_suggesstion": [],
+        "related_lesson": [
+          {
+            "relate_concept_id": "11228",
+            "relate_alias": "Dãy số bị chặn"
+          }
+        ],
+        "solution_detail": [
+          {
+            "type": "html",
+            "content": "<p>Ta có $u_n&gt;0 \\longrightarrow\\left(u_n\\right)$ bị chặn dưới bời 0 . Mặt khác $\\dfrac{1}{k^2}&lt;\\dfrac{1}{(k-1) k}=\\dfrac{1}{k-1}-\\dfrac{1}{k}\\left(k \\in \\mathbb{N}^*, k \\geq 2\\right)$ nên suy ra:</p><p>$u_n&lt;\\dfrac{1}{1.2}+\\dfrac{1}{2.3}+\\dfrac{1}{3.4}+\\cdots+\\dfrac{1}{n(n+1)}=1-\\dfrac{1}{2}+\\dfrac{1}{2}-\\dfrac{1}{3}+\\dfrac{1}{2}-\\dfrac{1}{4}+\\cdots+\\dfrac{1}{n}-\\dfrac{1}{n+1}=1-\\dfrac{1}{n+1}&lt;1$</p><p>nên dãy $\\left(u_n\\right)$ bị chặn trên, do đó dãy $\\left(u_n\\right)$ bị chặn.</p>"
+          }
+        ],
+        "note": [],
+        "sub_order": 6,
+        "group_id": "62d655ff0378c97d2e577114",
+        "idx": 166892
+      },
+      {
+        "_id": "62e2391196c6c48a27422bac",
+        "chapter": {
+          "id": "62d7b82a5249027d2ed2859f",
+          "name": "Cấp số cộng"
+        },
+        "parent": {
+          "id": ""
+        },
+        "question_style": {
+          "general": 1,
+          "mobile": 1
+        },
+        "content_type": 2,
+        "question_type": 1,
+        "difficult_degree": 1,
+        "question": {
+          "id": "2",
+          "content": [
+            {
+              "type": "html",
+              "content": "<p>Cho cấp số cộng \\(\\left( {{u_n}} \\right)\\) có \\({u_3} = 2022\\) và \\({u_6} = 1950\\). Tính \\({u_{2023}} = ?\\)</p>"
+            }
+          ],
+          "answers": [
+            {
+              "id": "3",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "\\( - 46458\\)"
+                }
+              ],
+              "answer_key": "a",
+              "correct": true,
+              "question": "2",
+              "selected": true
+            },
+            {
+              "id": "4",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "\\( - 46482\\)"
+                }
+              ],
+              "answer_key": "b",
+              "correct": false,
+              "question": "2"
+            },
+            {
+              "id": "5",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "<p>$46458$</p>"
+                }
+              ],
+              "answer_key": "c",
+              "correct": false,
+              "question": "2"
+            },
+            {
+              "id": "6",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "<p>$46474$</p>"
+                }
+              ],
+              "answer_key": "d",
+              "correct": false,
+              "question": "2"
+            }
+          ],
+          "quiz": "1",
+          "user_answer": {
+            "answer_choice": "a",
+            "result": true
+          }
+        },
+        "solution_suggesstion": [
+          {
+            "type": "html",
+            "content": "<p>Sử dụng công thức tính số hạng tổng quát \\({u_n} = {u_1} + \\left( {n - 1} \\right).d\\)</p>"
+          }
+        ],
+        "related_lesson": [
+          {
+            "relate_concept_id": "10499",
+            "relate_alias": "Tìm số hạng của cấp số cộng",
+            "chapter_id": "62d7b82a5249027d2ed2859f"
+          }
+        ],
+        "solution_detail": [
+          {
+            "type": "html",
+            "content": "<p>Ta có</p><p>\\(\\begin{array}{l}\\left\\{ \\begin{array}{l}{u_3} = 2022\\\\{u_6} = 1950\\end{array} \\right. \\Leftrightarrow \\left\\{ \\begin{array}{l}{u_1} + 2d = 2022\\\\{u_1} + 5d = 1950\\end{array} \\right. \\Leftrightarrow \\left\\{ \\begin{array}{l}{u_1} = 2070\\\\d = &nbsp;- 24\\end{array} \\right.\\\\ \\Rightarrow {u_{2023}} = {u_1} + 2022d = 2070 + 2022.\\left( { - 24} \\right) = &nbsp;- 46458\\end{array}\\)</p>"
+          }
+        ],
+        "note": [],
+        "group_id": "62e2391196c6c48a27422bae",
+        "order": 4,
+        "sub_order": 1,
+        "idx": 137994
+      },
+      {
+        "_id": "653bdc48d02b37c16da9432a",
+        "chapter": {
+          "id": "65743759f98309a809b4424a",
+          "name": "[BK] DÃY SỐ ĐIỀN NHIỀU Ô TRỐNG"
+        },
+        "parent": {
+          "id": ""
+        },
+        "content_type": 2,
+        "question_type": 2,
+        "question": {
+          "id": "clo8sg4cx000b357haoffgte5",
+          "content": [
+            {
+              "type": "html",
+              "content": "<p>Cho cấp số nh&acirc;n \\(\\left( {{u_n}} \\right)\\) với \\({u_1} = 3,q = \\dfrac{1}{2}\\). Điền số th&iacute;ch hợp v&agrave;o c&aacute;c &ocirc; trống sau:</p>"
+            }
+          ],
+          "sub_quizzes": [
+            {
+              "_id": "653bdc48d02b37c16da9432d",
+              "grade": {
+                "type": 13,
+                "name": "Đánh Giá Năng Lực"
+              },
+              "subject": {
+                "id": "602f38202db069a276f5afe6",
+                "name": "KHO 1 - TOÁN TƯ DUY LOGIC, ĐỊNH LƯỢNG, TOÁN BK",
+                "type": 11
+              },
+              "chapter": {
+                "id": "65743759f98309a809b4424a",
+                "name": "[BK] DÃY SỐ ĐIỀN NHIỀU Ô TRỐNG"
+              },
+              "parent": {
+                "content": [
+                  {
+                    "type": "html",
+                    "content": "<p>Cho cấp số nh&acirc;n \\(\\left( {{u_n}} \\right)\\) với \\({u_1} = 3,q = \\dfrac{1}{2}\\). Điền số th&iacute;ch hợp v&agrave;o c&aacute;c &ocirc; trống sau:</p>"
+                  }
+                ],
+                "id": "653bdc48d02b37c16da9432a"
+              },
+              "question_style": {
+                "general": 1
+              },
+              "attachment": {
+                "questionFile": "",
+                "solutionDetailFile": "",
+                "audioFile": ""
+              },
+              "analytics": {
+                "correct": 0,
+                "incorrect": 0,
+                "skiped": 0,
+                "total_answer": 0,
+                "percent_false": 0
+              },
+              "is_private": 0,
+              "modified_history": [],
+              "question_type": 25,
+              "difficult_degree": 3,
+              "solution_suggesstion": [
+                {
+                  "type": "html",
+                  "content": "<p>&nbsp;&nbsp;</p>"
+                }
+              ],
+              "related_lesson": [],
+              "solution_detail": [
+                {
+                  "type": "html",
+                  "content": "<p>a) Ta c&oacute; \\({u_5} = {u_1} \\cdot {q^{5 - 1}} = 3 \\cdot {\\left( {\\dfrac{1}{2}} \\right)^4} = \\dfrac{3}{{16}}\\).</p>\n<p>Vậy \\(a + b = 19\\)</p>\n<p>b) Ta c&oacute; \\({u_n} = {u_1} \\cdot {q^{n - 1}} \\Rightarrow \\dfrac{3}{{512}} = 3 \\cdot {\\left( {\\dfrac{1}{2}} \\right)^{n - 1}} \\Leftrightarrow \\dfrac{1}{{{2^{n - 1}}}} = \\dfrac{1}{{512}}\\)</p>\n<p>\\( \\Leftrightarrow {2^{n - 1}} = 512 \\Leftrightarrow n - 1 = 9 \\Leftrightarrow n = 10\\)</p>"
+                }
+              ],
+              "note": [],
+              "question": {
+                "id": "clo8sgfqc001d357h2i6hjkuu",
+                "content": [
+                  {
+                    "type": "html",
+                    "content": "<p>&nbsp;&nbsp;</p>"
+                  }
+                ],
+                "answers_empty": [
+                  {
+                    "prefix_input": [
+                      {
+                        "type": "html",
+                        "content": "<p>a) Gi&aacute; trị của \\({u_5}\\) l&agrave; \\(\\dfrac{a}{b}\\) (\\(\\dfrac{a}{b}\\) l&agrave; ph&acirc;n số tối giản). Khi đ&oacute; \\(a + b\\) bằng&nbsp;</p>"
+                      }
+                    ],
+                    "prefix_break_line": false,
+                    "suffix_break_line": false,
+                    "suffix_input": [],
+                    "correct_answer": ["19"],
+                    "clean_duplicate_space": true,
+                    "case_intensitive": false,
+                    "trim_white_space": true,
+                    "break_line_next_empty": true
+                  },
+                  {
+                    "prefix_input": [
+                      {
+                        "type": "html",
+                        "content": "<p>b) \\(\\dfrac{3}{{512}}\\) l&agrave; số hạng thứ&nbsp;</p>"
+                      }
+                    ],
+                    "prefix_break_line": false,
+                    "suffix_break_line": false,
+                    "suffix_input": [],
+                    "correct_answer": ["10"],
+                    "clean_duplicate_space": true,
+                    "case_intensitive": false,
+                    "trim_white_space": true,
+                    "break_line_next_empty": false
+                  }
+                ],
+                "sub_quizzes": "clo8sgfqc001d357h2i6hjkuu"
+              },
+              "idx": 173766,
+              "created_date": "2023-10-27T15:50:32.599Z",
+              "updated_date": "2023-12-01T07:07:39.647Z",
+              "state": 4,
+              "total_question": 20315,
+              "id": "clo8sgfqc001d357h2i6hjkuu",
+              "question_child": {
+                "id": "clo8sgfqc001d357h2i6hjkuu",
+                "content": [
+                  {
+                    "type": "html",
+                    "content": "<p>&nbsp;&nbsp;</p>"
+                  }
+                ],
+                "answers_empty": [
+                  {
+                    "prefix_input": [
+                      {
+                        "type": "html",
+                        "content": "<p>a) Gi&aacute; trị của \\({u_5}\\) l&agrave; \\(\\dfrac{a}{b}\\) (\\(\\dfrac{a}{b}\\) l&agrave; ph&acirc;n số tối giản). Khi đ&oacute; \\(a + b\\) bằng&nbsp;</p>"
+                      }
+                    ],
+                    "prefix_break_line": false,
+                    "suffix_break_line": false,
+                    "suffix_input": [],
+                    "correct_answer": ["19"],
+                    "clean_duplicate_space": true,
+                    "case_intensitive": false,
+                    "trim_white_space": true,
+                    "break_line_next_empty": true
+                  },
+                  {
+                    "prefix_input": [
+                      {
+                        "type": "html",
+                        "content": "<p>b) \\(\\dfrac{3}{{512}}\\) l&agrave; số hạng thứ&nbsp;</p>"
+                      }
+                    ],
+                    "prefix_break_line": false,
+                    "suffix_break_line": false,
+                    "suffix_input": [],
+                    "correct_answer": ["10"],
+                    "clean_duplicate_space": true,
+                    "case_intensitive": false,
+                    "trim_white_space": true,
+                    "break_line_next_empty": false
+                  }
+                ],
+                "sub_quizzes": "clo8sgfqc001d357h2i6hjkuu",
+                "user_answer": {
+                  "answer": ["19", "9"],
+                  "result": false
+                }
+              }
+            }
+          ],
+          "quiz": "clpxvfpg1000o357fvuiauff2"
+        },
+        "group_id": "653bdc48d02b37c16da9432c",
+        "order": 5,
+        "sub_order": 1,
+        "idx": 173767,
+        "difficult_degree": null,
+        "related_lesson": null
+      },
+      {
+        "_id": "63282606985fba098d14547b",
+        "chapter": {
+          "id": "62d7b82a5249027d2ed2859f",
+          "name": "Cấp số cộng"
+        },
+        "parent": {
+          "id": ""
+        },
+        "question_style": {
+          "general": 1,
+          "mobile": 1
+        },
+        "content_type": 2,
+        "question_type": 1,
+        "difficult_degree": 2,
+        "question": {
+          "id": "2",
+          "content": [
+            {
+              "type": "html",
+              "content": "<p> Một người làm việc cho một công ty. Theo hợp đồng trong năm đầu tiên, tháng lương thứ nhất là 8 triệu đồng và lương tháng sau cao hơn tháng trước là 500 ngàn đồng. Hỏi theo hợp đồng, tháng thứ 8 người đó nhận được lương là bao nhiêu?</p>"
+            }
+          ],
+          "answers": [
+            {
+              "id": "3",
+              "text": [
+                {
+                  "type": "html",
+                  "content": " 11,3 triệu đồng."
+                }
+              ],
+              "answer_key": "a",
+              "correct": false,
+              "question": "2"
+            },
+            {
+              "id": "4",
+              "text": [
+                {
+                  "type": "html",
+                  "content": " 11,7 triệu đồng."
+                }
+              ],
+              "answer_key": "b",
+              "correct": false,
+              "question": "2"
+            },
+            {
+              "id": "5",
+              "text": [
+                {
+                  "type": "html",
+                  "content": " 12,0 triệu đồng."
+                }
+              ],
+              "answer_key": "c",
+              "correct": false,
+              "question": "2"
+            },
+            {
+              "id": "6",
+              "text": [
+                {
+                  "type": "html",
+                  "content": " 11,5 triệu đồng."
+                }
+              ],
+              "answer_key": "d",
+              "correct": true,
+              "question": "2",
+              "selected": true
+            }
+          ],
+          "quiz": "1",
+          "user_answer": {
+            "answer_choice": "d",
+            "result": true
+          }
+        },
+        "solution_suggesstion": [
+          {
+            "type": "html",
+            "content": "<p><strong>Bước 1: </strong>Tính số tiền lương tháng thứ hai, thứ ba và suy ra công thức tổng quát để tính số tiền lương tháng thứ \\(n\\).</p><p><strong>Bước 2:</strong> Thế \\(n = 8\\) vào công thức trên và kết luận.</p>"
+          }
+        ],
+        "related_lesson": [],
+        "solution_detail": [
+          {
+            "type": "html",
+            "content": "<p>Lương tháng thứ hai người đó nhận được là: 8000000 + 500000 = 8500000 đồng.</p><p>Lương tháng thứ ba người đó nhận được là: 8000000 + 2.500000 = 9000000 đồng.</p><p>Từ đó, ta suy ra lương tháng thứ \\(n\\) người đó nhận được là: \\(8000000 + \\left( {n - 1} \\right).500000\\) đồng.</p><p>Do đó lương tháng thứ 8 người đó nhận được là: \\(8000000 + \\left( {8 - 1} \\right).500000\\) = 11500000 đồng = 11,5 triệu đồng.</p><p>Vậy ta chọn phương án D.</p>"
+          }
+        ],
+        "note": [],
+        "group_id": "63282606985fba098d14547d",
+        "order": 9,
+        "sub_order": 1,
+        "idx": 146713
+      },
+      {
+        "_id": "6551e1b99bb6c8d7aef9ddc2",
+        "chapter": {
+          "id": "65782a75f98309a809b44983",
+          "name": "[BK] DÃY SỐ KÉO THẢ"
+        },
+        "parent": {
+          "id": ""
+        },
+        "content_type": 2,
+        "question_type": 2,
+        "question": {
+          "id": "clowm246k000b357gmrolivx6",
+          "content": [
+            {
+              "type": "html",
+              "content": "<p>Cho cấp số cộng \\(\\left( {{u_n}} \\right)\\) thỏa m&atilde;n \\({u_2} = 5;d = 4\\).</p>"
+            }
+          ],
+          "sub_quizzes": [
+            {
+              "_id": "6551e1b99bb6c8d7aef9ddc5",
+              "grade": {
+                "type": 13,
+                "name": "Đánh Giá Năng Lực"
+              },
+              "subject": {
+                "id": "602f38202db069a276f5afe6",
+                "name": "KHO 1 - TOÁN, TƯ DUY LOGIC, PHÂN TÍCH SỐ LIỆU ",
+                "type": 11
+              },
+              "chapter": {
+                "id": "65782a75f98309a809b44983",
+                "name": "[BK] DÃY SỐ KÉO THẢ"
+              },
+              "parent": {
+                "content": [
+                  {
+                    "type": "html",
+                    "content": "<p>Cho cấp số cộng \\(\\left( {{u_n}} \\right)\\) thỏa m&atilde;n \\({u_2} = 5;d = 4\\).</p>"
+                  }
+                ],
+                "id": "6551e1b99bb6c8d7aef9ddc2"
+              },
+              "question_style": {
+                "general": 1
+              },
+              "attachment": {
+                "questionFile": "",
+                "solutionDetailFile": "",
+                "audioFile": ""
+              },
+              "analytics": {
+                "correct": 0,
+                "incorrect": 0,
+                "skiped": 0,
+                "total_answer": 0,
+                "percent_false": 0
+              },
+              "is_private": 0,
+              "modified_history": [],
+              "question_type": 33,
+              "difficult_degree": 2,
+              "solution_suggesstion": [
+                {
+                  "type": "html",
+                  "content": "<p>\\({u_n} = {u_1} + \\left( {n - 1} \\right)d\\)</p>"
+                }
+              ],
+              "related_lesson": [],
+              "solution_detail": [
+                {
+                  "type": "html",
+                  "content": "<p>\\({u_5} = {u_2} + 2.d = 13\\)</p>\n<p>\\({u_2} + {u_{10}} = 2.{u_6} \\Leftrightarrow \\dfrac{{{u_2} + {u_{10}}}}{2} = {u_6}\\)</p>"
+                }
+              ],
+              "note": [],
+              "question": {
+                "id": "clownk5qv001h357ghhnbulpl",
+                "sub_quizzes": "clownk5qv001h357ghhnbulpl",
+                "editor": {
+                  "id": "clowm246j0001357gdmf6n93i",
+                  "content_question": {
+                    "type": "single",
+                    "title": "Tiêu Đề Câu Hỏi",
+                    "order": 0,
+                    "items": [
+                      {
+                        "content": [
+                          {
+                            "type": "html",
+                            "content": "<p style=\"text-align: left;\">K&eacute;o thả đ&aacute;p &aacute;n v&agrave;o &ocirc; trống:</p>"
+                          }
+                        ]
+                      }
+                    ],
+                    "params": [
+                      {
+                        "type": "html",
+                        "name": "content",
+                        "value": []
+                      }
+                    ]
+                  },
+                  "firstParagraph": {
+                    "type": "list",
+                    "default_num": 3,
+                    "title": "Đáp Án Gợi Ý",
+                    "order": 0,
+                    "css_special": {
+                      "textAlign": "center",
+                      "lineHeight": "28px"
+                    },
+                    "items": [
+                      {
+                        "id": "answer_clowm246j0002357g5h5xg3ga",
+                        "content": "13",
+                        "name": "TEXT BOX",
+                        "obj_type": "boxText",
+                        "optionTypeIndex": 0,
+                        "obj_evt": {
+                          "type": "dnd",
+                          "dnd_type": "dragSource",
+                          "dnd_style_type": "twoface"
+                        }
+                      },
+                      {
+                        "id": "answer_clowm246j0003357g6sp8rfjw",
+                        "content": "17",
+                        "name": "TEXT BOX",
+                        "obj_type": "boxText",
+                        "optionTypeIndex": 0,
+                        "obj_evt": {
+                          "type": "dnd",
+                          "dnd_type": "dragSource",
+                          "dnd_style_type": "twoface"
+                        }
+                      },
+                      {
+                        "id": "answer_clowm246j0004357gfa4av6v0",
+                        "content": "\\({u_6}\\)",
+                        "name": "TEXT BOX",
+                        "obj_type": "boxText",
+                        "optionTypeIndex": 0,
+                        "obj_evt": {
+                          "type": "dnd",
+                          "dnd_type": "dragSource",
+                          "dnd_style_type": "twoface"
+                        }
+                      },
+                      {
+                        "id": "answer_clownmkmk006k357g6khpqkhk",
+                        "content": "\\({S_6}\\)",
+                        "obj_type": "boxText",
+                        "obj_evt": {
+                          "type": "dnd",
+                          "dnd_type": "dragSource",
+                          "dnd_style_type": "twoface"
+                        },
+                        "optionTypeIndex": 0,
+                        "name": "TEXT BOX"
+                      }
+                    ],
+                    "optionType": [
+                      {
+                        "type": "single",
+                        "obj_type": "boxText",
+                        "obj_evt": {
+                          "type": "dnd",
+                          "dnd_type": "dragSource",
+                          "dnd_style_type": "twoface"
+                        },
+                        "name": "TEXT BOX",
+                        "params": [
+                          {
+                            "type": "text",
+                            "name": "content",
+                            "value": ""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "secondParagraph": {
+                    "type": "list",
+                    "default_num": 1,
+                    "title": "Nội Dung Câu Hỏi ( Cần Bao Gồm Các Đáp Án Trên )",
+                    "order": 1,
+                    "css_special": {
+                      "textAlign": "left",
+                      "lineHeight": "28px"
+                    },
+                    "items": [
+                      {
+                        "id": "answer_clowm246k0005357gfqzkivlq",
+                        "content": "Khi đó \\({u_4} = \\) ",
+                        "name": "TEXT SIMPLE",
+                        "obj_type": "richText",
+                        "optionTypeIndex": 0
+                      },
+                      {
+                        "id": "answer_clownlkid002o357gljks8uei",
+                        "content": "13",
+                        "obj_type": "boxText",
+                        "obj_evt": {
+                          "type": "dnd",
+                          "dnd_type": "dropTarget",
+                          "dnd_style_type": "twoface"
+                        },
+                        "optionTypeIndex": 1,
+                        "name": "TEXT BOX"
+                      },
+                      {
+                        "id": "answer_clownloq5002y357gibif7bgk",
+                        "content": "và \\(\\dfrac{{{u_2} + {u_{10}}}}{2} = \\) ",
+                        "obj_type": "richText",
+                        "optionTypeIndex": 0,
+                        "name": "TEXT SIMPLE"
+                      },
+                      {
+                        "id": "answer_clownlxlx003n357gzzltpq44",
+                        "content": "\\({u_6}\\)",
+                        "obj_type": "boxText",
+                        "obj_evt": {
+                          "type": "dnd",
+                          "dnd_type": "dropTarget",
+                          "dnd_style_type": "twoface"
+                        },
+                        "optionTypeIndex": 1,
+                        "name": "TEXT BOX"
+                      }
+                    ],
+                    "optionType": [
+                      {
+                        "type": "single",
+                        "obj_type": "richText",
+                        "name": "TEXT SIMPLE",
+                        "params": [
+                          {
+                            "type": "text",
+                            "name": "content",
+                            "value": ""
+                          }
+                        ]
+                      },
+                      {
+                        "type": "single",
+                        "obj_type": "boxText",
+                        "obj_evt": {
+                          "type": "dnd",
+                          "dnd_type": "dropTarget",
+                          "dnd_style_type": "twoface"
+                        },
+                        "name": "TEXT BOX",
+                        "params": [
+                          {
+                            "type": "text",
+                            "name": "content",
+                            "value": ""
+                          }
+                        ]
+                      },
+                      {
+                        "type": "single",
+                        "obj_type": "boxTextSpecial",
+                        "obj_evt": {
+                          "type": "dnd",
+                          "dnd_type": "dropTarget",
+                          "dnd_style_type": "twoface"
+                        },
+                        "name": "TEXT BOX DANG. ~ va ˀ ",
+                        "params": [
+                          {
+                            "type": "text",
+                            "name": "content",
+                            "detail": "Nhap. Dau",
+                            "value": ""
+                          },
+                          {
+                            "type": "text",
+                            "name": "text",
+                            "detail": "Nhap. Noi Dung Can Hien Thi.",
+                            "value": ""
+                          }
+                        ]
+                      },
+                      {
+                        "type": "single",
+                        "obj_type": "boxText",
+                        "obj_evt": {
+                          "type": "dnd",
+                          "dnd_type": "dropTarget",
+                          "dnd_style_type": "twoface"
+                        },
+                        "className": "sac",
+                        "name": "TEXT BOX (Dau Sac)",
+                        "params": [
+                          {
+                            "type": "text",
+                            "name": "content",
+                            "detail": "Nhap. Noi Dung",
+                            "value": ""
+                          }
+                        ]
+                      },
+                      {
+                        "type": "single",
+                        "obj_type": "boxText",
+                        "obj_evt": {
+                          "type": "dnd",
+                          "dnd_type": "dropTarget",
+                          "dnd_style_type": "twoface"
+                        },
+                        "className": "huyen",
+                        "name": "TEXT BOX (Dau Huyen)",
+                        "params": [
+                          {
+                            "type": "text",
+                            "name": "content",
+                            "detail": "Nhap. Noi Dung",
+                            "value": ""
+                          }
+                        ]
+                      },
+                      {
+                        "type": "single",
+                        "obj_type": "boxText",
+                        "obj_evt": {
+                          "type": "dnd",
+                          "dnd_type": "dropTarget",
+                          "dnd_style_type": "twoface"
+                        },
+                        "className": "nga",
+                        "name": "TEXT BOX (Dau Nga)",
+                        "params": [
+                          {
+                            "type": "text",
+                            "name": "content",
+                            "detail": "Nhap. Noi Dung",
+                            "value": ""
+                          }
+                        ]
+                      },
+                      {
+                        "type": "single",
+                        "obj_type": "boxText",
+                        "obj_evt": {
+                          "type": "dnd",
+                          "dnd_type": "dropTarget",
+                          "dnd_style_type": "twoface"
+                        },
+                        "className": "nang",
+                        "name": "TEXT BOX (Dau Nang)",
+                        "params": [
+                          {
+                            "type": "text",
+                            "name": "content",
+                            "detail": "Nhap. Noi Dung",
+                            "value": ""
+                          }
+                        ]
+                      },
+                      {
+                        "type": "single",
+                        "obj_type": "boxText",
+                        "obj_evt": {
+                          "type": "dnd",
+                          "dnd_type": "dropTarget",
+                          "dnd_style_type": "twoface"
+                        },
+                        "className": "hoi",
+                        "name": "TEXT BOX (Dau Hoi)",
+                        "params": [
+                          {
+                            "type": "text",
+                            "name": "content",
+                            "detail": "Nhap. Noi Dung",
+                            "value": ""
+                          }
+                        ]
+                      },
+                      {
+                        "type": "single",
+                        "obj_type": "breakDown",
+                        "name": "Xuống dòng",
+                        "params": [
+                          {
+                            "type": "html",
+                            "name": "breakDown",
+                            "value": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "title": {
+                  "desktop": "Con hãy bấm vào từ/cụm từ sau đó kéo thả để hoàn thành câu/đoạn văn",
+                  "mobile": "Con hãy bấm vào từ/cụm từ sau đó bấm chọn ô trống thích hợp để hoàn thành câu/đoạn văn"
+                }
+              },
+              "idx": 175310,
+              "created_date": "2023-11-13T08:43:37.836Z",
+              "updated_date": "2023-12-12T04:12:06.402Z",
+              "state": 4,
+              "total_question": 20459,
+              "id": "clownk5qv001h357ghhnbulpl",
+              "editor": {
+                "id": "clowm246j0001357gdmf6n93i",
+                "content_question": {
+                  "type": "single",
+                  "title": "Tiêu Đề Câu Hỏi",
+                  "order": 0,
+                  "items": [
+                    {
+                      "content": [
+                        {
+                          "type": "html",
+                          "content": "<p style=\"text-align: left;\">K&eacute;o thả đ&aacute;p &aacute;n v&agrave;o &ocirc; trống:</p>"
+                        }
+                      ]
+                    }
+                  ],
+                  "params": [
+                    {
+                      "type": "html",
+                      "name": "content",
+                      "value": []
+                    }
+                  ]
+                },
+                "firstParagraph": {
+                  "type": "list",
+                  "default_num": 3,
+                  "title": "Đáp Án Gợi Ý",
+                  "order": 0,
+                  "css_special": {
+                    "textAlign": "center",
+                    "lineHeight": "28px"
+                  },
+                  "items": [
+                    {
+                      "id": "answer_clowm246j0002357g5h5xg3ga",
+                      "content": "13",
+                      "name": "TEXT BOX",
+                      "obj_type": "boxText",
+                      "optionTypeIndex": 0,
+                      "obj_evt": {
+                        "type": "dnd",
+                        "dnd_type": "dragSource",
+                        "dnd_style_type": "twoface"
+                      }
+                    },
+                    {
+                      "id": "answer_clowm246j0003357g6sp8rfjw",
+                      "content": "17",
+                      "name": "TEXT BOX",
+                      "obj_type": "boxText",
+                      "optionTypeIndex": 0,
+                      "obj_evt": {
+                        "type": "dnd",
+                        "dnd_type": "dragSource",
+                        "dnd_style_type": "twoface"
+                      }
+                    },
+                    {
+                      "id": "answer_clowm246j0004357gfa4av6v0",
+                      "content": "\\({u_6}\\)",
+                      "name": "TEXT BOX",
+                      "obj_type": "boxText",
+                      "optionTypeIndex": 0,
+                      "obj_evt": {
+                        "type": "dnd",
+                        "dnd_type": "dragSource",
+                        "dnd_style_type": "twoface"
+                      }
+                    },
+                    {
+                      "id": "answer_clownmkmk006k357g6khpqkhk",
+                      "content": "\\({S_6}\\)",
+                      "obj_type": "boxText",
+                      "obj_evt": {
+                        "type": "dnd",
+                        "dnd_type": "dragSource",
+                        "dnd_style_type": "twoface"
+                      },
+                      "optionTypeIndex": 0,
+                      "name": "TEXT BOX"
+                    }
+                  ],
+                  "optionType": [
+                    {
+                      "type": "single",
+                      "obj_type": "boxText",
+                      "obj_evt": {
+                        "type": "dnd",
+                        "dnd_type": "dragSource",
+                        "dnd_style_type": "twoface"
+                      },
+                      "name": "TEXT BOX",
+                      "params": [
+                        {
+                          "type": "text",
+                          "name": "content",
+                          "value": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "secondParagraph": {
+                  "type": "list",
+                  "default_num": 1,
+                  "title": "Nội Dung Câu Hỏi ( Cần Bao Gồm Các Đáp Án Trên )",
+                  "order": 1,
+                  "css_special": {
+                    "textAlign": "left",
+                    "lineHeight": "28px"
+                  },
+                  "items": [
+                    {
+                      "id": "answer_clowm246k0005357gfqzkivlq",
+                      "content": "Khi đó \\({u_4} = \\) ",
+                      "name": "TEXT SIMPLE",
+                      "obj_type": "richText",
+                      "optionTypeIndex": 0
+                    },
+                    {
+                      "id": "answer_clownlkid002o357gljks8uei",
+                      "content": "13",
+                      "obj_type": "boxText",
+                      "obj_evt": {
+                        "type": "dnd",
+                        "dnd_type": "dropTarget",
+                        "dnd_style_type": "twoface"
+                      },
+                      "optionTypeIndex": 1,
+                      "name": "TEXT BOX"
+                    },
+                    {
+                      "id": "answer_clownloq5002y357gibif7bgk",
+                      "content": "và \\(\\dfrac{{{u_2} + {u_{10}}}}{2} = \\) ",
+                      "obj_type": "richText",
+                      "optionTypeIndex": 0,
+                      "name": "TEXT SIMPLE"
+                    },
+                    {
+                      "id": "answer_clownlxlx003n357gzzltpq44",
+                      "content": "\\({u_6}\\)",
+                      "obj_type": "boxText",
+                      "obj_evt": {
+                        "type": "dnd",
+                        "dnd_type": "dropTarget",
+                        "dnd_style_type": "twoface"
+                      },
+                      "optionTypeIndex": 1,
+                      "name": "TEXT BOX"
+                    }
+                  ],
+                  "optionType": [
+                    {
+                      "type": "single",
+                      "obj_type": "richText",
+                      "name": "TEXT SIMPLE",
+                      "params": [
+                        {
+                          "type": "text",
+                          "name": "content",
+                          "value": ""
+                        }
+                      ]
+                    },
+                    {
+                      "type": "single",
+                      "obj_type": "boxText",
+                      "obj_evt": {
+                        "type": "dnd",
+                        "dnd_type": "dropTarget",
+                        "dnd_style_type": "twoface"
+                      },
+                      "name": "TEXT BOX",
+                      "params": [
+                        {
+                          "type": "text",
+                          "name": "content",
+                          "value": ""
+                        }
+                      ]
+                    },
+                    {
+                      "type": "single",
+                      "obj_type": "boxTextSpecial",
+                      "obj_evt": {
+                        "type": "dnd",
+                        "dnd_type": "dropTarget",
+                        "dnd_style_type": "twoface"
+                      },
+                      "name": "TEXT BOX DANG. ~ va ˀ ",
+                      "params": [
+                        {
+                          "type": "text",
+                          "name": "content",
+                          "detail": "Nhap. Dau",
+                          "value": ""
+                        },
+                        {
+                          "type": "text",
+                          "name": "text",
+                          "detail": "Nhap. Noi Dung Can Hien Thi.",
+                          "value": ""
+                        }
+                      ]
+                    },
+                    {
+                      "type": "single",
+                      "obj_type": "boxText",
+                      "obj_evt": {
+                        "type": "dnd",
+                        "dnd_type": "dropTarget",
+                        "dnd_style_type": "twoface"
+                      },
+                      "className": "sac",
+                      "name": "TEXT BOX (Dau Sac)",
+                      "params": [
+                        {
+                          "type": "text",
+                          "name": "content",
+                          "detail": "Nhap. Noi Dung",
+                          "value": ""
+                        }
+                      ]
+                    },
+                    {
+                      "type": "single",
+                      "obj_type": "boxText",
+                      "obj_evt": {
+                        "type": "dnd",
+                        "dnd_type": "dropTarget",
+                        "dnd_style_type": "twoface"
+                      },
+                      "className": "huyen",
+                      "name": "TEXT BOX (Dau Huyen)",
+                      "params": [
+                        {
+                          "type": "text",
+                          "name": "content",
+                          "detail": "Nhap. Noi Dung",
+                          "value": ""
+                        }
+                      ]
+                    },
+                    {
+                      "type": "single",
+                      "obj_type": "boxText",
+                      "obj_evt": {
+                        "type": "dnd",
+                        "dnd_type": "dropTarget",
+                        "dnd_style_type": "twoface"
+                      },
+                      "className": "nga",
+                      "name": "TEXT BOX (Dau Nga)",
+                      "params": [
+                        {
+                          "type": "text",
+                          "name": "content",
+                          "detail": "Nhap. Noi Dung",
+                          "value": ""
+                        }
+                      ]
+                    },
+                    {
+                      "type": "single",
+                      "obj_type": "boxText",
+                      "obj_evt": {
+                        "type": "dnd",
+                        "dnd_type": "dropTarget",
+                        "dnd_style_type": "twoface"
+                      },
+                      "className": "nang",
+                      "name": "TEXT BOX (Dau Nang)",
+                      "params": [
+                        {
+                          "type": "text",
+                          "name": "content",
+                          "detail": "Nhap. Noi Dung",
+                          "value": ""
+                        }
+                      ]
+                    },
+                    {
+                      "type": "single",
+                      "obj_type": "boxText",
+                      "obj_evt": {
+                        "type": "dnd",
+                        "dnd_type": "dropTarget",
+                        "dnd_style_type": "twoface"
+                      },
+                      "className": "hoi",
+                      "name": "TEXT BOX (Dau Hoi)",
+                      "params": [
+                        {
+                          "type": "text",
+                          "name": "content",
+                          "detail": "Nhap. Noi Dung",
+                          "value": ""
+                        }
+                      ]
+                    },
+                    {
+                      "type": "single",
+                      "obj_type": "breakDown",
+                      "name": "Xuống dòng",
+                      "params": [
+                        {
+                          "type": "html",
+                          "name": "breakDown",
+                          "value": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "title": {
+                "id": "clowm246j0001357gdmf6n93i",
+                "content_question": {
+                  "type": "single",
+                  "title": "Tiêu Đề Câu Hỏi",
+                  "order": 0,
+                  "items": [
+                    {
+                      "content": [
+                        {
+                          "type": "html",
+                          "content": "<p style=\"text-align: left;\">K&eacute;o thả đ&aacute;p &aacute;n v&agrave;o &ocirc; trống:</p>"
+                        }
+                      ]
+                    }
+                  ],
+                  "params": [
+                    {
+                      "type": "html",
+                      "name": "content",
+                      "value": []
+                    }
+                  ]
+                },
+                "firstParagraph": {
+                  "type": "list",
+                  "default_num": 3,
+                  "title": "Đáp Án Gợi Ý",
+                  "order": 0,
+                  "css_special": {
+                    "textAlign": "center",
+                    "lineHeight": "28px"
+                  },
+                  "items": [
+                    {
+                      "id": "answer_clowm246j0002357g5h5xg3ga",
+                      "content": "13",
+                      "name": "TEXT BOX",
+                      "obj_type": "boxText",
+                      "optionTypeIndex": 0,
+                      "obj_evt": {
+                        "type": "dnd",
+                        "dnd_type": "dragSource",
+                        "dnd_style_type": "twoface"
+                      }
+                    },
+                    {
+                      "id": "answer_clowm246j0003357g6sp8rfjw",
+                      "content": "17",
+                      "name": "TEXT BOX",
+                      "obj_type": "boxText",
+                      "optionTypeIndex": 0,
+                      "obj_evt": {
+                        "type": "dnd",
+                        "dnd_type": "dragSource",
+                        "dnd_style_type": "twoface"
+                      }
+                    },
+                    {
+                      "id": "answer_clowm246j0004357gfa4av6v0",
+                      "content": "\\({u_6}\\)",
+                      "name": "TEXT BOX",
+                      "obj_type": "boxText",
+                      "optionTypeIndex": 0,
+                      "obj_evt": {
+                        "type": "dnd",
+                        "dnd_type": "dragSource",
+                        "dnd_style_type": "twoface"
+                      }
+                    },
+                    {
+                      "id": "answer_clownmkmk006k357g6khpqkhk",
+                      "content": "\\({S_6}\\)",
+                      "obj_type": "boxText",
+                      "obj_evt": {
+                        "type": "dnd",
+                        "dnd_type": "dragSource",
+                        "dnd_style_type": "twoface"
+                      },
+                      "optionTypeIndex": 0,
+                      "name": "TEXT BOX"
+                    }
+                  ],
+                  "optionType": [
+                    {
+                      "type": "single",
+                      "obj_type": "boxText",
+                      "obj_evt": {
+                        "type": "dnd",
+                        "dnd_type": "dragSource",
+                        "dnd_style_type": "twoface"
+                      },
+                      "name": "TEXT BOX",
+                      "params": [
+                        {
+                          "type": "text",
+                          "name": "content",
+                          "value": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "secondParagraph": {
+                  "type": "list",
+                  "default_num": 1,
+                  "title": "Nội Dung Câu Hỏi ( Cần Bao Gồm Các Đáp Án Trên )",
+                  "order": 1,
+                  "css_special": {
+                    "textAlign": "left",
+                    "lineHeight": "28px"
+                  },
+                  "items": [
+                    {
+                      "id": "answer_clowm246k0005357gfqzkivlq",
+                      "content": "Khi đó \\({u_4} = \\) ",
+                      "name": "TEXT SIMPLE",
+                      "obj_type": "richText",
+                      "optionTypeIndex": 0
+                    },
+                    {
+                      "id": "answer_clownlkid002o357gljks8uei",
+                      "content": "13",
+                      "obj_type": "boxText",
+                      "obj_evt": {
+                        "type": "dnd",
+                        "dnd_type": "dropTarget",
+                        "dnd_style_type": "twoface"
+                      },
+                      "optionTypeIndex": 1,
+                      "name": "TEXT BOX"
+                    },
+                    {
+                      "id": "answer_clownloq5002y357gibif7bgk",
+                      "content": "và \\(\\dfrac{{{u_2} + {u_{10}}}}{2} = \\) ",
+                      "obj_type": "richText",
+                      "optionTypeIndex": 0,
+                      "name": "TEXT SIMPLE"
+                    },
+                    {
+                      "id": "answer_clownlxlx003n357gzzltpq44",
+                      "content": "\\({u_6}\\)",
+                      "obj_type": "boxText",
+                      "obj_evt": {
+                        "type": "dnd",
+                        "dnd_type": "dropTarget",
+                        "dnd_style_type": "twoface"
+                      },
+                      "optionTypeIndex": 1,
+                      "name": "TEXT BOX"
+                    }
+                  ],
+                  "optionType": [
+                    {
+                      "type": "single",
+                      "obj_type": "richText",
+                      "name": "TEXT SIMPLE",
+                      "params": [
+                        {
+                          "type": "text",
+                          "name": "content",
+                          "value": ""
+                        }
+                      ]
+                    },
+                    {
+                      "type": "single",
+                      "obj_type": "boxText",
+                      "obj_evt": {
+                        "type": "dnd",
+                        "dnd_type": "dropTarget",
+                        "dnd_style_type": "twoface"
+                      },
+                      "name": "TEXT BOX",
+                      "params": [
+                        {
+                          "type": "text",
+                          "name": "content",
+                          "value": ""
+                        }
+                      ]
+                    },
+                    {
+                      "type": "single",
+                      "obj_type": "boxTextSpecial",
+                      "obj_evt": {
+                        "type": "dnd",
+                        "dnd_type": "dropTarget",
+                        "dnd_style_type": "twoface"
+                      },
+                      "name": "TEXT BOX DANG. ~ va ˀ ",
+                      "params": [
+                        {
+                          "type": "text",
+                          "name": "content",
+                          "detail": "Nhap. Dau",
+                          "value": ""
+                        },
+                        {
+                          "type": "text",
+                          "name": "text",
+                          "detail": "Nhap. Noi Dung Can Hien Thi.",
+                          "value": ""
+                        }
+                      ]
+                    },
+                    {
+                      "type": "single",
+                      "obj_type": "boxText",
+                      "obj_evt": {
+                        "type": "dnd",
+                        "dnd_type": "dropTarget",
+                        "dnd_style_type": "twoface"
+                      },
+                      "className": "sac",
+                      "name": "TEXT BOX (Dau Sac)",
+                      "params": [
+                        {
+                          "type": "text",
+                          "name": "content",
+                          "detail": "Nhap. Noi Dung",
+                          "value": ""
+                        }
+                      ]
+                    },
+                    {
+                      "type": "single",
+                      "obj_type": "boxText",
+                      "obj_evt": {
+                        "type": "dnd",
+                        "dnd_type": "dropTarget",
+                        "dnd_style_type": "twoface"
+                      },
+                      "className": "huyen",
+                      "name": "TEXT BOX (Dau Huyen)",
+                      "params": [
+                        {
+                          "type": "text",
+                          "name": "content",
+                          "detail": "Nhap. Noi Dung",
+                          "value": ""
+                        }
+                      ]
+                    },
+                    {
+                      "type": "single",
+                      "obj_type": "boxText",
+                      "obj_evt": {
+                        "type": "dnd",
+                        "dnd_type": "dropTarget",
+                        "dnd_style_type": "twoface"
+                      },
+                      "className": "nga",
+                      "name": "TEXT BOX (Dau Nga)",
+                      "params": [
+                        {
+                          "type": "text",
+                          "name": "content",
+                          "detail": "Nhap. Noi Dung",
+                          "value": ""
+                        }
+                      ]
+                    },
+                    {
+                      "type": "single",
+                      "obj_type": "boxText",
+                      "obj_evt": {
+                        "type": "dnd",
+                        "dnd_type": "dropTarget",
+                        "dnd_style_type": "twoface"
+                      },
+                      "className": "nang",
+                      "name": "TEXT BOX (Dau Nang)",
+                      "params": [
+                        {
+                          "type": "text",
+                          "name": "content",
+                          "detail": "Nhap. Noi Dung",
+                          "value": ""
+                        }
+                      ]
+                    },
+                    {
+                      "type": "single",
+                      "obj_type": "boxText",
+                      "obj_evt": {
+                        "type": "dnd",
+                        "dnd_type": "dropTarget",
+                        "dnd_style_type": "twoface"
+                      },
+                      "className": "hoi",
+                      "name": "TEXT BOX (Dau Hoi)",
+                      "params": [
+                        {
+                          "type": "text",
+                          "name": "content",
+                          "detail": "Nhap. Noi Dung",
+                          "value": ""
+                        }
+                      ]
+                    },
+                    {
+                      "type": "single",
+                      "obj_type": "breakDown",
+                      "name": "Xuống dòng",
+                      "params": [
+                        {
+                          "type": "html",
+                          "name": "breakDown",
+                          "value": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "question_child": {
+                "id": "clownk5qv001h357ghhnbulpl",
+                "sub_quizzes": "clownk5qv001h357ghhnbulpl",
+                "editor": {
+                  "id": "clowm246j0001357gdmf6n93i",
+                  "content_question": {
+                    "type": "single",
+                    "title": "Tiêu Đề Câu Hỏi",
+                    "order": 0,
+                    "items": [
+                      {
+                        "content": [
+                          {
+                            "type": "html",
+                            "content": "<p style=\"text-align: left;\">K&eacute;o thả đ&aacute;p &aacute;n v&agrave;o &ocirc; trống:</p>"
+                          }
+                        ]
+                      }
+                    ],
+                    "params": [
+                      {
+                        "type": "html",
+                        "name": "content",
+                        "value": []
+                      }
+                    ]
+                  },
+                  "firstParagraph": {
+                    "type": "list",
+                    "default_num": 3,
+                    "title": "Đáp Án Gợi Ý",
+                    "order": 0,
+                    "css_special": {
+                      "textAlign": "center",
+                      "lineHeight": "28px"
+                    },
+                    "items": [
+                      {
+                        "id": "answer_clowm246j0002357g5h5xg3ga",
+                        "content": "13",
+                        "name": "TEXT BOX",
+                        "obj_type": "boxText",
+                        "optionTypeIndex": 0,
+                        "obj_evt": {
+                          "type": "dnd",
+                          "dnd_type": "dragSource",
+                          "dnd_style_type": "twoface"
+                        }
+                      },
+                      {
+                        "id": "answer_clowm246j0003357g6sp8rfjw",
+                        "content": "17",
+                        "name": "TEXT BOX",
+                        "obj_type": "boxText",
+                        "optionTypeIndex": 0,
+                        "obj_evt": {
+                          "type": "dnd",
+                          "dnd_type": "dragSource",
+                          "dnd_style_type": "twoface"
+                        }
+                      },
+                      {
+                        "id": "answer_clowm246j0004357gfa4av6v0",
+                        "content": "\\({u_6}\\)",
+                        "name": "TEXT BOX",
+                        "obj_type": "boxText",
+                        "optionTypeIndex": 0,
+                        "obj_evt": {
+                          "type": "dnd",
+                          "dnd_type": "dragSource",
+                          "dnd_style_type": "twoface"
+                        }
+                      },
+                      {
+                        "id": "answer_clownmkmk006k357g6khpqkhk",
+                        "content": "\\({S_6}\\)",
+                        "obj_type": "boxText",
+                        "obj_evt": {
+                          "type": "dnd",
+                          "dnd_type": "dragSource",
+                          "dnd_style_type": "twoface"
+                        },
+                        "optionTypeIndex": 0,
+                        "name": "TEXT BOX"
+                      }
+                    ],
+                    "optionType": [
+                      {
+                        "type": "single",
+                        "obj_type": "boxText",
+                        "obj_evt": {
+                          "type": "dnd",
+                          "dnd_type": "dragSource",
+                          "dnd_style_type": "twoface"
+                        },
+                        "name": "TEXT BOX",
+                        "params": [
+                          {
+                            "type": "text",
+                            "name": "content",
+                            "value": ""
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "secondParagraph": {
+                    "type": "list",
+                    "default_num": 1,
+                    "title": "Nội Dung Câu Hỏi ( Cần Bao Gồm Các Đáp Án Trên )",
+                    "order": 1,
+                    "css_special": {
+                      "textAlign": "left",
+                      "lineHeight": "28px"
+                    },
+                    "items": [
+                      {
+                        "id": "answer_clowm246k0005357gfqzkivlq",
+                        "content": "Khi đó \\({u_4} = \\) ",
+                        "name": "TEXT SIMPLE",
+                        "obj_type": "richText",
+                        "optionTypeIndex": 0
+                      },
+                      {
+                        "id": "answer_clownlkid002o357gljks8uei",
+                        "content": "13",
+                        "obj_type": "boxText",
+                        "obj_evt": {
+                          "type": "dnd",
+                          "dnd_type": "dropTarget",
+                          "dnd_style_type": "twoface"
+                        },
+                        "optionTypeIndex": 1,
+                        "name": "TEXT BOX"
+                      },
+                      {
+                        "id": "answer_clownloq5002y357gibif7bgk",
+                        "content": "và \\(\\dfrac{{{u_2} + {u_{10}}}}{2} = \\) ",
+                        "obj_type": "richText",
+                        "optionTypeIndex": 0,
+                        "name": "TEXT SIMPLE"
+                      },
+                      {
+                        "id": "answer_clownlxlx003n357gzzltpq44",
+                        "content": "\\({u_6}\\)",
+                        "obj_type": "boxText",
+                        "obj_evt": {
+                          "type": "dnd",
+                          "dnd_type": "dropTarget",
+                          "dnd_style_type": "twoface"
+                        },
+                        "optionTypeIndex": 1,
+                        "name": "TEXT BOX"
+                      }
+                    ],
+                    "optionType": [
+                      {
+                        "type": "single",
+                        "obj_type": "richText",
+                        "name": "TEXT SIMPLE",
+                        "params": [
+                          {
+                            "type": "text",
+                            "name": "content",
+                            "value": ""
+                          }
+                        ]
+                      },
+                      {
+                        "type": "single",
+                        "obj_type": "boxText",
+                        "obj_evt": {
+                          "type": "dnd",
+                          "dnd_type": "dropTarget",
+                          "dnd_style_type": "twoface"
+                        },
+                        "name": "TEXT BOX",
+                        "params": [
+                          {
+                            "type": "text",
+                            "name": "content",
+                            "value": ""
+                          }
+                        ]
+                      },
+                      {
+                        "type": "single",
+                        "obj_type": "boxTextSpecial",
+                        "obj_evt": {
+                          "type": "dnd",
+                          "dnd_type": "dropTarget",
+                          "dnd_style_type": "twoface"
+                        },
+                        "name": "TEXT BOX DANG. ~ va ˀ ",
+                        "params": [
+                          {
+                            "type": "text",
+                            "name": "content",
+                            "detail": "Nhap. Dau",
+                            "value": ""
+                          },
+                          {
+                            "type": "text",
+                            "name": "text",
+                            "detail": "Nhap. Noi Dung Can Hien Thi.",
+                            "value": ""
+                          }
+                        ]
+                      },
+                      {
+                        "type": "single",
+                        "obj_type": "boxText",
+                        "obj_evt": {
+                          "type": "dnd",
+                          "dnd_type": "dropTarget",
+                          "dnd_style_type": "twoface"
+                        },
+                        "className": "sac",
+                        "name": "TEXT BOX (Dau Sac)",
+                        "params": [
+                          {
+                            "type": "text",
+                            "name": "content",
+                            "detail": "Nhap. Noi Dung",
+                            "value": ""
+                          }
+                        ]
+                      },
+                      {
+                        "type": "single",
+                        "obj_type": "boxText",
+                        "obj_evt": {
+                          "type": "dnd",
+                          "dnd_type": "dropTarget",
+                          "dnd_style_type": "twoface"
+                        },
+                        "className": "huyen",
+                        "name": "TEXT BOX (Dau Huyen)",
+                        "params": [
+                          {
+                            "type": "text",
+                            "name": "content",
+                            "detail": "Nhap. Noi Dung",
+                            "value": ""
+                          }
+                        ]
+                      },
+                      {
+                        "type": "single",
+                        "obj_type": "boxText",
+                        "obj_evt": {
+                          "type": "dnd",
+                          "dnd_type": "dropTarget",
+                          "dnd_style_type": "twoface"
+                        },
+                        "className": "nga",
+                        "name": "TEXT BOX (Dau Nga)",
+                        "params": [
+                          {
+                            "type": "text",
+                            "name": "content",
+                            "detail": "Nhap. Noi Dung",
+                            "value": ""
+                          }
+                        ]
+                      },
+                      {
+                        "type": "single",
+                        "obj_type": "boxText",
+                        "obj_evt": {
+                          "type": "dnd",
+                          "dnd_type": "dropTarget",
+                          "dnd_style_type": "twoface"
+                        },
+                        "className": "nang",
+                        "name": "TEXT BOX (Dau Nang)",
+                        "params": [
+                          {
+                            "type": "text",
+                            "name": "content",
+                            "detail": "Nhap. Noi Dung",
+                            "value": ""
+                          }
+                        ]
+                      },
+                      {
+                        "type": "single",
+                        "obj_type": "boxText",
+                        "obj_evt": {
+                          "type": "dnd",
+                          "dnd_type": "dropTarget",
+                          "dnd_style_type": "twoface"
+                        },
+                        "className": "hoi",
+                        "name": "TEXT BOX (Dau Hoi)",
+                        "params": [
+                          {
+                            "type": "text",
+                            "name": "content",
+                            "detail": "Nhap. Noi Dung",
+                            "value": ""
+                          }
+                        ]
+                      },
+                      {
+                        "type": "single",
+                        "obj_type": "breakDown",
+                        "name": "Xuống dòng",
+                        "params": [
+                          {
+                            "type": "html",
+                            "name": "breakDown",
+                            "value": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "title": {
+                  "desktop": "Con hãy bấm vào từ/cụm từ sau đó kéo thả để hoàn thành câu/đoạn văn",
+                  "mobile": "Con hãy bấm vào từ/cụm từ sau đó bấm chọn ô trống thích hợp để hoàn thành câu/đoạn văn"
+                },
+                "user_answer": {
+                  "answer": ["13", "\\({u_6}\\)"],
+                  "result": true
+                }
+              }
+            }
+          ],
+          "quiz": "clq26jfrw000o357gvgzyn5gd"
+        },
+        "group_id": "6551e1b99bb6c8d7aef9ddc4",
+        "order": 23,
+        "sub_order": 1,
+        "idx": 175311,
+        "difficult_degree": null,
+        "related_lesson": null
+      },
+      {
+        "_id": "637c537f5fec456981b88e14",
+        "chapter": {
+          "id": "62d7b82a5249027d2ed2859f",
+          "name": "Cấp số cộng"
+        },
+        "parent": {
+          "id": ""
+        },
+        "question_style": {
+          "general": 1,
+          "mobile": 1
+        },
+        "content_type": 2,
+        "question_type": 1,
+        "difficult_degree": 2,
+        "question": {
+          "id": "2",
+          "content": [
+            {
+              "type": "html",
+              "content": "<p> Người ta dự định xây một bức tường như hình vẽ.</p><p><img src=\"https://cdn.vungoi.vn/vungoi/2022/1122/1669092171_4QeJ.jpg\" /></p><p>Biết rằng hàng dưới cùng có 1000 viên gạch, mỗi hàng tiếp theo đều có ít hơn hàng trước 1 viên gạch và hàng trên cùng chỉ có 1 viên gạch. Hỏi số gạch cần dùng để hoàn thành bức tường trên là bao nhiêu?</p>"
+            }
+          ],
+          "answers": [
+            {
+              "id": "3",
+              "text": [
+                {
+                  "type": "html",
+                  "content": " 50100."
+                }
+              ],
+              "answer_key": "a",
+              "correct": false
+            },
+            {
+              "id": "4",
+              "text": [
+                {
+                  "type": "html",
+                  "content": " 50050."
+                }
+              ],
+              "answer_key": "b",
+              "correct": false
+            },
+            {
+              "id": "5",
+              "text": [
+                {
+                  "type": "html",
+                  "content": " 501000."
+                }
+              ],
+              "answer_key": "c",
+              "correct": false
+            },
+            {
+              "id": "6",
+              "text": [
+                {
+                  "type": "html",
+                  "content": " 500500."
+                }
+              ],
+              "answer_key": "d",
+              "correct": true,
+              "selected": true
+            }
+          ],
+          "user_answer": {
+            "answer_choice": "d",
+            "result": true
+          }
+        },
+        "solution_suggesstion": [
+          {
+            "type": "html",
+            "content": "<p><strong>Bước 1: </strong>Xác định số hạng đầu \\({u_1}\\), số hạng cuối \\({u_n}\\)và công sai \\(d\\).</p><p><strong>Bước 2:</strong> Tính số gạch cần dùng bằng cách sử dụng công thức \\(S = \\dfrac{{n\\left[ {2{u_1} + \\left( {n - 1} \\right)d} \\right]}}{2}\\) và kết luận.</p>"
+          }
+        ],
+        "related_lesson": [
+          {
+            "relate_concept_id": "10496",
+            "relate_alias": "Cấp số cộng"
+          }
+        ],
+        "solution_detail": [
+          {
+            "type": "html",
+            "content": "<p>Ta thấy cách xây một bức tường như trên tạo thành một cấp số cộng có số hạng đầu \\({u_1} = 1000\\), số hạng cuối \\({u_{1000}} = 1\\) và công sai \\(d = &nbsp;- 1\\).</p><p>Số gạch cần dùng để hoàn thành bức tường trên là:</p><p>\\(S = \\dfrac{{n\\left[ {2{u_1} + \\left( {n - 1} \\right)d} \\right]}}{2} = \\dfrac{{1000\\left[ {2.1000 + 999.\\left( { - 1} \\right)} \\right]}}{2} = 500500\\) (viên gạch)</p><p>Vậy ta chọn phương án D.</p>"
+          }
+        ],
+        "note": [],
+        "sub_order": 7,
+        "group_id": "62e78a1f96c6c48a274238b2",
+        "idx": 155478
+      },
+      {
+        "_id": "62e254f196c6c48a27422e89",
+        "chapter": {
+          "id": "62d7b8385249027d2ed285a1",
+          "name": "Cấp số nhân"
+        },
+        "parent": {
+          "id": ""
+        },
+        "question_style": {
+          "general": 1,
+          "mobile": 1
+        },
+        "content_type": 2,
+        "question_type": 1,
+        "difficult_degree": 3,
+        "question": {
+          "id": "2",
+          "content": [
+            {
+              "type": "html",
+              "content": "<p> Cho dãy số \\(\\left( {{u_n}} \\right)\\) xác định bởi \\(\\left\\{ \\begin{array}{l}{u_1} = 1\\\\{u_{n + 1}} = \\sqrt {3u_n^2 + 2} \\,;\\,n \\ge 1\\end{array} \\right.\\). Tính tổng \\(S = u_1^2 + u_2^2 + u_3^2 + ... + u_{2022}^2\\):</p>"
+            }
+          ],
+          "answers": [
+            {
+              "id": "3",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "\\({3^{2022}} - 2023\\)"
+                }
+              ],
+              "answer_key": "a",
+              "correct": true,
+              "question": "2",
+              "selected": true
+            },
+            {
+              "id": "4",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "\\({3^{2022}} - 2022\\)"
+                }
+              ],
+              "answer_key": "b",
+              "correct": false,
+              "question": "2"
+            },
+            {
+              "id": "5",
+              "text": [
+                {
+                  "type": "html",
+                  "content": " \\({3^{2022}}\\)"
+                }
+              ],
+              "answer_key": "c",
+              "correct": false,
+              "question": "2"
+            },
+            {
+              "id": "6",
+              "text": [
+                {
+                  "type": "html",
+                  "content": " \\({3^{2023}} - 2022\\)"
+                }
+              ],
+              "answer_key": "d",
+              "correct": false,
+              "question": "2"
+            }
+          ],
+          "quiz": "1",
+          "user_answer": {
+            "answer_choice": "a",
+            "result": true
+          }
+        },
+        "solution_suggesstion": [
+          {
+            "type": "html",
+            "content": "<p>Đổi biến, đổi dãy để có tính chất đặc biệt.:</p><p>- Xét dãy số \\(\\left( {{v_n}} \\right)\\) với \\({v_n} = u_n^2 + 1\\,;\\,\\forall n \\in {\\mathbb{N}^ * }\\).</p><p>- Chứng minh dãy mới là một cấp số nhân hoặc một cấp số cộng.</p>"
+          }
+        ],
+        "related_lesson": [
+          {
+            "relate_concept_id": "10508",
+            "relate_alias": "Tìm cấp số nhân",
+            "chapter_id": "62d7b8385249027d2ed285a1"
+          },
+          {
+            "relate_concept_id": "10507",
+            "relate_alias": "Tính tổng n số hạng đầu tiên của dãy"
+          }
+        ],
+        "solution_detail": [
+          {
+            "type": "html",
+            "content": "<p>X&eacute;t d&atilde;y số \\(\\left( {{v_n}} \\right)\\) với \\({v_n} = u_n^2 + 1\\,;\\,\\forall n \\in {\\mathbb{N}^ * }\\).</p>\n<p>Ta c&oacute;: \\({v_{n + 1}} = u_{n + 1}^2 + 1 = 3u_n^2 + 2 + 1 = 3\\left( {u_n^2 + 1} \\right) = 3{v_n}\\,;\\,\\forall n \\in {\\mathbb{N}^ * }\\)</p>\n<p>\\( \\Rightarrow \\)\\(\\left( {{v_n}} \\right)\\) l&agrave; cấp số nh&acirc;n c&oacute; số hạng đầu \\({v_1} = u_1^2 + 1 = 2\\) v&agrave; c&ocirc;ng bội \\(q = 3\\).</p>\n<p>Vậy \\(S = u_1^2 + u_2^2 + u_3^2 + ... + u_{2022}^2\\) \\( = {v_1} - 1 + {v_2} - 1 + {v_3} - 1 + ... + {v_{2022}} - 1\\)</p>\n<p>\\( = {v_1} + {v_2} + {v_3} + ... + {v_{2022}} - 2022\\) \\( = {v_1}.\\dfrac{{{q^{2022}} - 1}}{{q - 1}} - 2022 = 2.\\dfrac{{{3^{2022}} - 1}}{2} - 2022\\) \\( = {3^{2022}} - 2023\\).</p>"
+          }
+        ],
+        "note": [],
+        "group_id": "62e254f196c6c48a27422e8b",
+        "order": 1,
+        "sub_order": 1,
+        "idx": 138080
+      },
+      {
+        "_id": "6442abcd12213740540d8d5b",
+        "chapter": {
+          "id": "62d7b8385249027d2ed285a1",
+          "name": "Cấp số nhân"
+        },
+        "parent": {
+          "id": ""
+        },
+        "question_style": {
+          "general": 1,
+          "mobile": 1
+        },
+        "content_type": 2,
+        "question_type": 1,
+        "difficult_degree": 3,
+        "question": {
+          "id": "2",
+          "content": [
+            {
+              "type": "html",
+              "content": "<p>Cho h&igrave;nh vu&ocirc;ng \\(ABCD\\) c&oacute; c&aacute;c cạnh bằng \\(a\\) v&agrave; c&oacute; diện t&iacute;ch bằng \\({S_1}\\). Nối bốn trung điểm \\({A_1},\\,{B_1},\\,{C_1},\\,{D_1}\\) theo thứ tự của bốn cạnh \\(AB,\\,BC,\\,CD,\\,DA\\) ta được h&igrave;nh vu&ocirc;ng thứ hai c&oacute; diện t&iacute;ch \\({S_2}\\).</p>"
+            },
+            {
+              "type": "html",
+              "content": "<p><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"https://cdn.vungoi.vn/vungoi/2023/0421/1682090908821_mceclip0.png\" /></p>"
+            },
+            {
+              "type": "html",
+              "content": "<p>Tiếp tục qu&aacute; tr&igrave;nh tr&ecirc;n ta được h&igrave;nh vu&ocirc;ng thứ ba l&agrave; \\({A_2}{B_2}{C_2}{D_2}\\) c&oacute; diện t&iacute;ch \\({S_3}\\) &hellip; v&agrave; cứ tiếp tục như thế ta được c&aacute;c h&igrave;nh vu&ocirc;ng lần lượt c&oacute; diện t&iacute;ch \\({S_4},\\,{S_5},\\,...,{S_{50}}\\) (tham khảo h&igrave;nh vẽ). Tổng \\(S = {S_1} + {S_2} + ... + {S_{50}}\\) bằng</p>"
+            }
+          ],
+          "answers": [
+            {
+              "id": "3",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "<p>\\(\\dfrac{{{a^2}\\left( {{2^{50}} - 1} \\right)}}{{{2^{49}}}}\\)</p>"
+                }
+              ],
+              "answer_key": "a",
+              "correct": true,
+              "question": "2",
+              "selected": true
+            },
+            {
+              "id": "4",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "<p>\\(\\dfrac{{{a^2}\\left( {{2^{50}} - 1} \\right)}}{{{2^{50}}}}\\)</p>"
+                }
+              ],
+              "answer_key": "b",
+              "correct": false,
+              "question": "2"
+            },
+            {
+              "id": "5",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "<p>\\(\\dfrac{{{a^2}\\left( {{2^{49}} - 1} \\right)}}{{{2^{48}}}}\\)</p>"
+                }
+              ],
+              "answer_key": "c",
+              "correct": false,
+              "question": "2"
+            },
+            {
+              "id": "6",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "<p>\\(\\dfrac{{{a^2}}}{{{2^{50}}}}\\).</p>"
+                }
+              ],
+              "answer_key": "d",
+              "correct": false,
+              "question": "2"
+            }
+          ],
+          "quiz": "1",
+          "user_answer": {
+            "answer_choice": "a",
+            "result": true
+          }
+        },
+        "solution_suggesstion": [],
+        "related_lesson": [],
+        "solution_detail": [
+          {
+            "type": "html",
+            "content": "<p>Diện t&iacute;ch h&igrave;nh vu&ocirc;ng thứ nhất l&agrave; \\({S_1} = {a^2}\\).</p>\n<p>Cạnh h&igrave;nh vu&ocirc;ng thứ hai l&agrave;: \\({a_2} = \\dfrac{{a\\sqrt 2 }}{2}\\) n&ecirc;n diện t&iacute;ch h&igrave;nh vu&ocirc;ng thứ hai l&agrave; \\({S_2} = a_2^2 = \\dfrac{1}{2}{S_1}\\)</p>\n<p>Tiếp tục qu&aacute; tr&igrave;nh tr&ecirc;n, ta được: Diện t&iacute;ch c&aacute;c h&igrave;nh vu&ocirc;ng lập th&agrave;nh cấp số nh&acirc;n với \\({S_1} = {a^2},\\,q = \\dfrac{1}{2}\\).</p>\n<p>Vậy \\(S = \\dfrac{{{S_1}(1 - {q^{50}})}}{{1 - q}} = \\dfrac{{{a^2}\\left( {{2^{50}} - 1} \\right)}}{{{2^{49}}}}\\).</p>"
+          }
+        ],
+        "note": [],
+        "group_id": "643391813b8cd96489cfd6e5",
+        "sub_order": 4,
+        "idx": 166012
+      },
+      {
+        "_id": "645e1166c50b4d247ac06b1d",
+        "chapter": {
+          "id": "62d7b82a5249027d2ed2859f",
+          "name": "Cấp số cộng"
+        },
+        "parent": {
+          "id": ""
+        },
+        "question_style": {
+          "general": 1,
+          "mobile": 1
+        },
+        "content_type": 2,
+        "question_type": 1,
+        "difficult_degree": 3,
+        "question": {
+          "id": "2",
+          "content": [
+            {
+              "type": "html",
+              "content": "<p>Tr&ecirc;n tia \\(Ox\\) lấy c&aacute;c điểm \\({I_1},{I_{_2}},...,{I_n},...\\) sao cho với mỗi số nguy&ecirc;n dương n, \\(O{I_n} = 2n\\). Trong c&ugrave;ng một nửa mặt phẳng c&oacute; bờ l&agrave; đường thẳng chứa tia \\(Ox\\), vẽ c&aacute;c nửa đường tr&ograve;n đường k&iacute;nh \\(O{I_n}\\), n=1,2,&hellip; K&iacute; hiệu \\({u_1}\\) l&agrave; diện t&iacute;ch của nửa h&igrave;nh tr&ograve;n đường k&iacute;nh \\(O{I_1}\\) v&agrave; với mỗi \\(n \\ge 2\\), k&iacute; hiệu \\({u_n}\\) l&agrave; diện t&iacute;ch của h&igrave;nh giới hạn bởi nửa đường tr&ograve;n đường k&iacute;nh \\(O{I_{n - 1}}\\) , nửa đường tr&ograve;n đường k&iacute;nh \\(O{I_n}\\) v&agrave; tia \\(Ox\\). Khi đ&oacute;, ta được d&atilde;y số \\(\\left( {{u_n}} \\right)\\). Khẳng định n&agrave;o sau đ&acirc;y <strong>đ&uacute;ng</strong>?</p>"
+            },
+            {
+              "type": "html",
+              "content": "<p><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"https://cdn.vungoi.vn/vungoi/2023/0512/1683886376222_mceclip0.png\" /></p>"
+            }
+          ],
+          "answers": [
+            {
+              "id": "3",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "<p>\\(\\left( {{u_n}} \\right)\\) l&agrave; cấp số cộng c&oacute; c&ocirc;ng sai \\(\\pi \\)</p>"
+                }
+              ],
+              "answer_key": "a",
+              "correct": true,
+              "question": "2"
+            },
+            {
+              "id": "4",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "<p>\\(\\left( {{u_n}} \\right)\\) l&agrave; cấp số cộng c&oacute; c&ocirc;ng sai \\(\\dfrac{\\pi }{4}\\)</p>"
+                }
+              ],
+              "answer_key": "b",
+              "correct": false,
+              "question": "2"
+            },
+            {
+              "id": "5",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "<p>\\(\\left( {{u_n}} \\right)\\) l&agrave; cấp số cộng c&oacute; c&ocirc;ng sai \\(\\dfrac{\\pi }{{16}}\\)</p>"
+                }
+              ],
+              "answer_key": "c",
+              "correct": false,
+              "question": "2"
+            },
+            {
+              "id": "6",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "<p>\\(\\left( {{u_n}} \\right)\\) l&agrave; cấp số cộng c&oacute; c&ocirc;ng sai \\(\\dfrac{\\pi }{2}\\)</p>"
+                }
+              ],
+              "answer_key": "d",
+              "correct": false,
+              "question": "2"
+            }
+          ],
+          "quiz": "1"
+        },
+        "solution_suggesstion": [
+          {
+            "type": "html",
+            "content": "<p>\\({u_n} = \\dfrac{1}{2}\\left( {\\pi \\dfrac{{OI_n^2}}{4} - \\pi \\dfrac{{OI_{n - 1}^2}}{4}} \\right)\\)</p>"
+          }
+        ],
+        "related_lesson": [],
+        "solution_detail": [
+          {
+            "type": "html",
+            "content": "<p>\\({u_1} = \\dfrac{1}{2}.\\pi .\\dfrac{{OI_1^2}}{4} = \\dfrac{\\pi }{2}\\)</p>\n<p>Với \\(n \\ge 2\\) ta c&oacute; :</p>\n<p>\\({u_n} = \\dfrac{1}{2}\\left( {\\pi \\dfrac{{OI_n^2}}{4} - \\pi \\dfrac{{OI_{n - 1}^2}}{4}} \\right)\\)\\( = \\dfrac{1}{2}\\pi \\left[ {\\left( {{n^2} - {{(n - 1)}^2}} \\right)} \\right] = \\dfrac{{(2n - 1)\\pi }}{2}(n \\ge 2)\\)</p>\n<p>\\({u_{n + 1}} = \\dfrac{{\\left[ {2\\left( {n + 1} \\right) - 1} \\right]\\pi }}{2} = \\dfrac{{\\left( {2n + 1} \\right)\\pi }}{2}\\)</p>\n<p>\\({u_2} = \\dfrac{{(2.2 - 1)\\pi }}{2} = \\dfrac{{3\\pi }}{2}\\)</p>\n<p>\\( \\Rightarrow {u_{n + 1}} - {u_n}\\)\\( = \\dfrac{{2n + 1}}{2}\\pi&nbsp; - \\dfrac{{(2n - 1)}}{2}\\pi&nbsp; = \\pi ,\\forall n \\ge 2\\)</p>\n<p>Mặt kh&aacute;c \\({u_2} - {u_1} = \\dfrac{{3\\pi }}{2} - \\dfrac{\\pi }{2} = \\pi \\)</p>\n<p>Vậy \\({u_{n + 1}} - {u_n} = \\pi {\\rm{ }}\\forall n \\in {N^*}\\)</p>\n<p>Do đ&oacute; \\(\\left( {{u_n}} \\right)\\) l&agrave; cấp số cộng với c&ocirc;ng sai \\(d = \\pi \\).</p>"
+          }
+        ],
+        "note": [],
+        "group_id": "645e1166c50b4d247ac06b1f",
+        "order": 15,
+        "sub_order": 1,
+        "idx": 166839
+      },
+      {
+        "_id": "6552e1906ad8b19ac38011bd",
+        "chapter": {
+          "id": "65743387f98309a809b44224",
+          "name": "[BK] DÃY SỐ ĐIỀN CHỖ TRỐNG"
+        },
+        "parent": {
+          "id": ""
+        },
+        "content_type": 2,
+        "question_type": 2,
+        "question": {
+          "id": "cloxqbxvj000b357gl6yc8ye8",
+          "content": [
+            {
+              "type": "html",
+              "content": "<p>Một c&ocirc;ng vi&ecirc;n h&igrave;nh tam gi&aacute;c được trồng c&acirc;y xanh theo h&agrave;ng c&oacute; quy luật của một cấp số cộng như sau: H&agrave;ng thứ nhất c&oacute; 9 c&acirc;y, h&agrave;ng thứ 10 c&oacute; 54 c&acirc;y, h&agrave;ng cuối c&ugrave;ng c&oacute; 2014 c&acirc;y.</p>"
+            }
+          ],
+          "sub_quizzes": [
+            {
+              "_id": "6552e1906ad8b19ac38011c0",
+              "grade": {
+                "type": 13,
+                "name": "Đánh Giá Năng Lực"
+              },
+              "subject": {
+                "id": "602f38202db069a276f5afe6",
+                "name": "KHO 1 - TOÁN, TƯ DUY LOGIC, PHÂN TÍCH SỐ LIỆU ",
+                "type": 11
+              },
+              "chapter": {
+                "id": "65743387f98309a809b44224",
+                "name": "[BK] DÃY SỐ ĐIỀN CHỖ TRỐNG"
+              },
+              "parent": {
+                "content": [
+                  {
+                    "type": "html",
+                    "content": "<p>Một c&ocirc;ng vi&ecirc;n h&igrave;nh tam gi&aacute;c được trồng c&acirc;y xanh theo h&agrave;ng c&oacute; quy luật của một cấp số cộng như sau: H&agrave;ng thứ nhất c&oacute; 9 c&acirc;y, h&agrave;ng thứ 10 c&oacute; 54 c&acirc;y, h&agrave;ng cuối c&ugrave;ng c&oacute; 2014 c&acirc;y.</p>"
+                  }
+                ],
+                "id": "6552e1906ad8b19ac38011bd"
+              },
+              "question_style": {
+                "general": 1
+              },
+              "attachment": {
+                "questionFile": "",
+                "solutionDetailFile": "",
+                "audioFile": ""
+              },
+              "analytics": {
+                "correct": 0,
+                "incorrect": 0,
+                "skiped": 0,
+                "total_answer": 0,
+                "percent_false": 0
+              },
+              "is_private": 0,
+              "modified_history": [],
+              "question_type": 5,
+              "difficult_degree": 2,
+              "solution_suggesstion": [
+                {
+                  "type": "html",
+                  "content": "<p>&nbsp;&nbsp;</p>"
+                }
+              ],
+              "related_lesson": [],
+              "solution_detail": [
+                {
+                  "type": "html",
+                  "content": "<p>Gọi \\(n\\) l&agrave; số h&agrave;ng c&acirc;y được trồng trong c&ocirc;ng vi&ecirc;n.</p>\n<p>V&igrave; c&acirc;y trong c&ocirc;ng vi&ecirc;n được trồng theo h&agrave;ng c&oacute; quy luật l&agrave; một cấp số cộng n&ecirc;n gọi \\({u_1},{u_2}, \\ldots ,{u_n}\\) lần lượt l&agrave; số c&acirc;y của h&agrave;ng. Khi đ&oacute; \\({u_1} = 9,{u_{10}} = 54\\) v&agrave; \\({u_n} = 2014\\).</p>\n<p>Ta c&oacute; \\(\\left\\{ {\\begin{array}{*{20}{l}}{{u_1} = 9}\\\\{{u_{10}} = {u_1} + 9d = 54}\\\\{{u_n} = {u_1} + (n - 1)d = 2014}\\end{array} \\Leftrightarrow \\left\\{ {\\begin{array}{*{20}{l}}{{u_1} = 9}\\\\{d = 5}\\\\{9 + 5(n - 1) = 2014}\\end{array}} \\right.} \\right.\\)</p>\n<p>\\( \\Leftrightarrow n - 1 = 401 \\Leftrightarrow n = 402\\).</p>\n<p>C&ocirc;ng vi&ecirc;n đ&oacute; c&oacute; tất cả 402 h&agrave;ng c&acirc;y.</p>"
+                }
+              ],
+              "note": [],
+              "question": {
+                "id": "cloxqoemz001c357gnrtqairz",
+                "content": [
+                  {
+                    "type": "html",
+                    "content": "<p>Điền số th&iacute;ch hợp v&agrave;o chỗ trống:</p>"
+                  }
+                ],
+                "correct_answer": ["402"],
+                "clean_duplicate_space": true,
+                "case_intensitive": false,
+                "trim_white_space": true,
+                "trim_characters": "",
+                "prefix_break_line": false,
+                "prefix_input": [
+                  {
+                    "type": "html",
+                    "content": "<p>C&ocirc;ng vi&ecirc;n đ&oacute; c&oacute; tất cả&nbsp;</p>"
+                  }
+                ],
+                "suffix_break_line": false,
+                "suffix_input": [
+                  {
+                    "type": "html",
+                    "content": "<p>h&agrave;ng c&acirc;y.</p>"
+                  }
+                ],
+                "sub_quizzes": "cloxqoemz001c357gnrtqairz"
+              },
+              "idx": 175397,
+              "created_date": "2023-11-14T02:55:12.873Z",
+              "updated_date": "2023-12-01T07:07:39.647Z",
+              "state": 4,
+              "total_question": 20315,
+              "id": "cloxqoemz001c357gnrtqairz",
+              "question_child": {
+                "id": "cloxqoemz001c357gnrtqairz",
+                "content": [
+                  {
+                    "type": "html",
+                    "content": "<p>Điền số th&iacute;ch hợp v&agrave;o chỗ trống:</p>"
+                  }
+                ],
+                "correct_answer": ["402"],
+                "clean_duplicate_space": true,
+                "case_intensitive": false,
+                "trim_white_space": true,
+                "trim_characters": "",
+                "prefix_break_line": false,
+                "prefix_input": [
+                  {
+                    "type": "html",
+                    "content": "<p>C&ocirc;ng vi&ecirc;n đ&oacute; c&oacute; tất cả&nbsp;</p>"
+                  }
+                ],
+                "suffix_break_line": false,
+                "suffix_input": [
+                  {
+                    "type": "html",
+                    "content": "<p>h&agrave;ng c&acirc;y.</p>"
+                  }
+                ],
+                "sub_quizzes": "cloxqoemz001c357gnrtqairz"
+              }
+            }
+          ],
+          "quiz": "clpxuu8ou000o357esdtp2u2l"
+        },
+        "group_id": "6552e1906ad8b19ac38011bf",
+        "order": 50,
+        "sub_order": 1,
+        "idx": 175398,
+        "difficult_degree": null,
+        "related_lesson": null
+      },
+      {
+        "_id": "64e47ccf28dbbe2636a9164a",
+        "chapter": {
+          "id": "65780327f98309a809b44936",
+          "name": "[BK] DÃY SỐ ĐÚNG SAI"
+        },
+        "parent": {
+          "id": ""
+        },
+        "content_type": 2,
+        "question_type": 2,
+        "question": {
+          "id": "cllm0kthp000b357d5qu9rkp2",
+          "content": [
+            {
+              "type": "html",
+              "content": "<p>Cho d&atilde;y số \\(\\left( {{u_n}} \\right)\\) được x&aacute;c định bởi: \\(\\left\\{ {\\begin{array}{*{20}{l}}{{u_1} = 1}\\\\{{u_{n + 1}} = {u_n} + \\dfrac{1}{{{2^n}}}(n \\ge 1)}\\end{array}} \\right.\\)</p>"
+            }
+          ],
+          "sub_quizzes": [
+            {
+              "_id": "64e47ccf28dbbe2636a9164d",
+              "grade": {
+                "type": 13,
+                "name": "Đánh Giá Năng Lực"
+              },
+              "subject": {
+                "id": "602f38202db069a276f5afe6",
+                "name": "KHO 1 - TOÁN, TƯ DUY LOGIC, PHÂN TÍCH SỐ LIỆU ",
+                "type": 11
+              },
+              "chapter": {
+                "id": "65780327f98309a809b44936",
+                "name": "[BK] DÃY SỐ ĐÚNG SAI"
+              },
+              "parent": {
+                "content": [
+                  {
+                    "type": "html",
+                    "content": "<p>Cho d&atilde;y số \\(\\left( {{u_n}} \\right)\\) được x&aacute;c định bởi: \\(\\left\\{ {\\begin{array}{*{20}{l}}{{u_1} = 1}\\\\{{u_{n + 1}} = {u_n} + \\dfrac{1}{{{2^n}}}(n \\ge 1)}\\end{array}} \\right.\\)</p>"
+                  }
+                ],
+                "id": "64e47ccf28dbbe2636a9164a"
+              },
+              "question_style": {
+                "general": 1
+              },
+              "attachment": {
+                "questionFile": "",
+                "solutionDetailFile": "",
+                "audioFile": ""
+              },
+              "analytics": {
+                "correct": 0,
+                "incorrect": 0,
+                "skiped": 0,
+                "total_answer": 0,
+                "percent_false": 0
+              },
+              "is_private": 0,
+              "modified_history": [],
+              "question_type": 35,
+              "difficult_degree": 3,
+              "solution_suggesstion": [
+                {
+                  "type": "html",
+                  "content": "<p>a)</p>\n<p>- Biểu diễn \\({v_n}\\) theo n.</p>\n<p>- T&iacute;nh \\(A - \\dfrac{A}{2}\\) từ đ&oacute; biểu diễn \\(A\\) theo n.</p>\n<p>b) Biểu diễn \\(A\\) theo n v&agrave; \\({u_n}\\)</p>"
+                }
+              ],
+              "related_lesson": [],
+              "solution_detail": [
+                {
+                  "type": "html",
+                  "content": "<p>a) Ta c&oacute; \\({v_n} = {u_{n + 1}} - {u_n} = \\left( {{u_n} + \\dfrac{1}{{{2^n}}}} \\right) - {u_n} = \\dfrac{1}{{{2^n}}}\\)</p>\n<p>Khi đ&oacute; \\(A = {v_1} + {v_2} +&nbsp; \\ldots&nbsp; + {v_n} = \\dfrac{1}{2} + \\dfrac{1}{{{2^2}}} +&nbsp; \\ldots&nbsp; + \\dfrac{1}{{{2^n}}}\\)</p>\n<p>\\( \\Rightarrow \\dfrac{A}{2} = \\dfrac{1}{2}\\left( {\\dfrac{1}{2} + \\dfrac{1}{{{2^2}}} +&nbsp; \\ldots&nbsp; + \\dfrac{1}{{{2^n}}}} \\right)\\)</p>\n<p>\\( \\Rightarrow A - \\dfrac{A}{2} = \\left( {\\dfrac{1}{2} + \\dfrac{1}{{{2^2}}} +&nbsp; \\ldots&nbsp; + \\dfrac{1}{{{2^n}}}} \\right)\\)\\( - \\left( {\\dfrac{1}{{{2^2}}} + \\dfrac{1}{{{2^3}}} +&nbsp; \\ldots&nbsp; + \\dfrac{1}{{{2^{n + 1}}}}} \\right)\\)\\( = \\dfrac{1}{2} - \\dfrac{1}{{{2^{n + 1}}}}\\)</p>\n<p>\\( \\Rightarrow A = 1 - \\dfrac{1}{{{2^n}}}\\)</p>\n<p>b) Từ c&acirc;u a, suy ra \\(A = {v_1} + {v_2} + \\ldots + {v_n}\\)\\( = {u_2} - {u_1} + {u_3} - {u_2} +&nbsp; \\ldots \\)\\( + {u_n} - {u_{n - 1}} + {u_{n + 1}} - {u_n}\\)</p>\n<p>\\( \\Leftrightarrow A = \\sum\\limits_{i = 1}^n {{v_i}}&nbsp; = {u_{n + 1}} - {u_1}\\)\\( = {u_{n + 1}} - 1 = {u_n} + \\dfrac{1}{{{2^n}}} - 1\\)\\( \\Rightarrow 1 - \\dfrac{1}{{{2^n}}} = {u_n} + \\dfrac{1}{{{2^n}}} - 1\\)\\( \\Rightarrow {u_n} = 2 - \\dfrac{1}{{{2^{n - 1}}}}\\)</p>\n<p>c) \\(\\lim {u_n} = \\lim \\left( {2 - \\dfrac{1}{{{2^{n - 1}}}}} \\right) = 2\\)</p>"
+                }
+              ],
+              "note": [],
+              "question": {
+                "id": "cllm2sisl0028357dfex2qhzp",
+                "title": {
+                  "desktop": "Con hãy tích vào ô đúng hoặc sai cho mỗi câu (khẳng định)  dưới đây."
+                },
+                "name": "Câu hỏi đúng sai dạng cột",
+                "type": 5,
+                "content_question": [
+                  {
+                    "type": "html",
+                    "content": "<p>Trong c&aacute;c khẳng định sau, khẳng định n&agrave;o đ&uacute;ng, khẳng định n&agrave;o sai?</p>"
+                  }
+                ],
+                "options": [
+                  {
+                    "content": "<p>Đặt \\({v_n} = {u_{n + 1}} - {u_n}\\). Khi đ&oacute; \\({v_1} + {v_2} +&nbsp; \\ldots&nbsp; + {v_n} = 1 - \\dfrac{1}{{{2^{n + 1}}}}\\)</p>",
+                    "answer": false
+                  },
+                  {
+                    "content": "<p>\\({u_n} = 2 - \\dfrac{1}{{{2^{n - 1}}}}\\).</p>",
+                    "answer": true
+                  },
+                  {
+                    "content": "<p>\\(\\lim {u_n} = 3\\).</p>",
+                    "answer": false
+                  }
+                ],
+                "sub_quizzes": "cllm2sisl0028357dfex2qhzp"
+              },
+              "idx": 169927,
+              "created_date": "2023-08-22T09:15:59.202Z",
+              "updated_date": "2024-04-17T02:06:03.827Z",
+              "state": 4,
+              "total_question": 22694,
+              "id": "cllm2sisl0028357dfex2qhzp",
+              "question_child": {
+                "id": "cllm2sisl0028357dfex2qhzp",
+                "title": {
+                  "desktop": "Con hãy tích vào ô đúng hoặc sai cho mỗi câu (khẳng định)  dưới đây."
+                },
+                "name": "Câu hỏi đúng sai dạng cột",
+                "type": 5,
+                "content_question": [
+                  {
+                    "type": "html",
+                    "content": "<p>Trong c&aacute;c khẳng định sau, khẳng định n&agrave;o đ&uacute;ng, khẳng định n&agrave;o sai?</p>"
+                  }
+                ],
+                "options": [
+                  {
+                    "content": "<p>Đặt \\({v_n} = {u_{n + 1}} - {u_n}\\). Khi đ&oacute; \\({v_1} + {v_2} +&nbsp; \\ldots&nbsp; + {v_n} = 1 - \\dfrac{1}{{{2^{n + 1}}}}\\)</p>",
+                    "answer": false
+                  },
+                  {
+                    "content": "<p>\\({u_n} = 2 - \\dfrac{1}{{{2^{n - 1}}}}\\).</p>",
+                    "answer": true
+                  },
+                  {
+                    "content": "<p>\\(\\lim {u_n} = 3\\).</p>",
+                    "answer": false
+                  }
+                ],
+                "sub_quizzes": "cllm2sisl0028357dfex2qhzp"
+              }
+            }
+          ],
+          "quiz": "clv59qoxy000o357g76cvgmx0"
+        },
+        "group_id": "64e47ccf28dbbe2636a9164c",
+        "order": 27,
+        "sub_order": 1,
+        "idx": 169928,
+        "difficult_degree": null,
+        "related_lesson": null
+      },
+      {
+        "_id": "638581bd3623fb7d91b993d0",
+        "chapter": {
+          "id": "62d639b85249027d2ed284c1",
+          "name": "Dãy số"
+        },
+        "parent": {
+          "id": ""
+        },
+        "question_style": {
+          "general": 1,
+          "mobile": 1
+        },
+        "content_type": 2,
+        "question_type": 1,
+        "difficult_degree": 3,
+        "question": {
+          "id": "2",
+          "content": [
+            {
+              "type": "html",
+              "content": "<p> Cho dãy số \\(\\left( {{u_n}} \\right)\\) xác định bởi \\(\\left\\{ {\\begin{array}{*{20}{c}}{{u_1} = 1}\\\\{{u_{n + 1}} = {u_n} + 2n + 1,n \\ge 1}\\end{array}} \\right.\\). Giá trị của n để \\( - {u_n} + 2017n + 2018 = 0\\)là:</p>"
+            }
+          ],
+          "answers": [
+            {
+              "id": "3",
+              "text": [
+                {
+                  "type": "html",
+                  "content": " Không có n "
+                }
+              ],
+              "answer_key": "a",
+              "correct": false,
+              "question": "2"
+            },
+            {
+              "id": "4",
+              "text": [
+                {
+                  "type": "html",
+                  "content": " 1009 "
+                }
+              ],
+              "answer_key": "b",
+              "correct": false,
+              "question": "2"
+            },
+            {
+              "id": "5",
+              "text": [
+                {
+                  "type": "html",
+                  "content": " 2018 "
+                }
+              ],
+              "answer_key": "c",
+              "correct": true,
+              "question": "2"
+            },
+            {
+              "id": "6",
+              "text": [
+                {
+                  "type": "html",
+                  "content": " 2017"
+                }
+              ],
+              "answer_key": "d",
+              "correct": false,
+              "question": "2"
+            }
+          ],
+          "quiz": "1"
+        },
+        "solution_suggesstion": [
+          {
+            "type": "html",
+            "content": "<p>Tìm công thức tổng quát \\({u_n} = {n^2}\\).</p>"
+          }
+        ],
+        "related_lesson": [],
+        "solution_detail": [
+          {
+            "type": "html",
+            "content": "<p>Với \\(n = 1\\) ta có: \\({u_2} = {u_1} + 3 = 4 = {2^2}\\)</p><p>Với \\(n = 2\\) ta có: \\({u_3} = {u_2} + 2.2 + 1 = 9 = {3^2}\\)</p><p>Với \\(n = 3\\) ta có: \\({u_4} = {u_3} + 2.3 + 1 = 16 = {4^2}\\)</p><p>Từ đó ta có: \\({u_n} = {n^2}\\) (Chứng minh bằng quy nạp)</p><p>\\(\\begin{array}{l} \\Rightarrow &nbsp;- {u_n} + 2017n + 2018 = 0\\\\ \\Leftrightarrow &nbsp;- {n^2} + 2017n + 2018 = 0 \\Leftrightarrow \\left[ {\\begin{array}{*{20}{c}}{n = &nbsp;- 1\\left( L \\right)}\\\\{n = 2018}\\end{array}} \\right.\\end{array}\\)</p>"
+          }
+        ],
+        "note": [],
+        "group_id": "638581bd3623fb7d91b993d2",
+        "order": 4,
+        "sub_order": 1,
+        "idx": 156519
+      },
+      {
+        "_id": "6466fab9d0487344f4031cd6",
+        "chapter": {
+          "id": "65780327f98309a809b44936",
+          "name": "[BK] DÃY SỐ ĐÚNG SAI"
+        },
+        "parent": {
+          "id": ""
+        },
+        "content_type": 2,
+        "question_type": 2,
+        "question": {
+          "id": "clhu23917000b3578gkpaijm9",
+          "content": [
+            {
+              "type": "html",
+              "content": "<p>Một người muốn mua một thanh gỗ đủ để cắt ra l&agrave;m c&aacute;c thanh ngang của một c&aacute;i thang. Biết rằng chiều d&agrave;i c&aacute;c thanh ngang của c&aacute;i thang đ&oacute; (từ bậc dưới c&ugrave;ng) lần lượt l&agrave; 45 cm, 43 cm , 41 cm,&hellip;,31 cm</p>\n<p><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"https://cdn.vungoi.vn/vungoi/2023/0519/1684470290681_mceclip0.png\" /></p>"
+            }
+          ],
+          "sub_quizzes": [
+            {
+              "_id": "6466fab9d0487344f4031cd9",
+              "grade": {
+                "type": 13,
+                "name": "Đánh Giá Năng Lực"
+              },
+              "subject": {
+                "id": "602f38202db069a276f5afe6",
+                "name": "KHO 1 - TOÁN, TƯ DUY LOGIC, PHÂN TÍCH SỐ LIỆU ",
+                "type": 11
+              },
+              "chapter": {
+                "id": "65780327f98309a809b44936",
+                "name": "[BK] DÃY SỐ ĐÚNG SAI"
+              },
+              "parent": {
+                "content": [
+                  {
+                    "type": "html",
+                    "content": "<p>Một người muốn mua một thanh gỗ đủ để cắt ra l&agrave;m c&aacute;c thanh ngang của một c&aacute;i thang. Biết rằng chiều d&agrave;i c&aacute;c thanh ngang của c&aacute;i thang đ&oacute; (từ bậc dưới c&ugrave;ng) lần lượt l&agrave; 45 cm, 43 cm , 41 cm,&hellip;,31 cm</p>\n<p><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"https://cdn.vungoi.vn/vungoi/2023/0519/1684470290681_mceclip0.png\" /></p>"
+                  }
+                ],
+                "id": "6466fab9d0487344f4031cd6"
+              },
+              "question_style": {
+                "general": 1
+              },
+              "attachment": {
+                "questionFile": "",
+                "solutionDetailFile": "",
+                "audioFile": ""
+              },
+              "analytics": {
+                "correct": 0,
+                "incorrect": 0,
+                "skiped": 0,
+                "total_answer": 0,
+                "percent_false": 0
+              },
+              "is_private": 0,
+              "modified_history": [],
+              "question_type": 35,
+              "difficult_degree": 2,
+              "solution_suggesstion": [
+                {
+                  "type": "html",
+                  "content": "<p>- T&igrave;m số hạng đầu v&agrave; c&ocirc;ng sai</p>\n<p>- Sử dụng c&ocirc;ng thức số hạng tổng qu&aacute;t t&igrave;m n</p>\n<p>- Sử dụng c&ocirc;ng thức t&iacute;nh tổng n số hạng đầu ti&ecirc;n</p>"
+                }
+              ],
+              "related_lesson": [],
+              "solution_detail": [
+                {
+                  "type": "html",
+                  "content": "<p>a) Chiều d&agrave;i c&aacute;c thanh ngang l&agrave; d&atilde;y cấp số cộng c&oacute; số hạng đầu l&agrave; 45, c&ocirc;ng sai l&agrave; \\( - 2\\)</p>\n<p>số hạng tổng qu&aacute;t l&agrave;: \\({u_n} = 45 - 2\\left( {n - 1} \\right) = 47 - 2n\\)</p>\n<p>khi \\({u_n} = 31 \\Rightarrow n = 8\\)</p>\n<p>Vậy c&aacute;i thang c&oacute; 8 bậc</p>\n<p>b) \\({S_8} = \\dfrac{{8.\\left( {45 + 31} \\right)}}{2} = 304\\)</p>\n<p>Vậy chiều d&agrave;i thanh gỗ l&agrave; 304cm.</p>"
+                }
+              ],
+              "note": [],
+              "question": {
+                "id": "clhu23xaw001c3578t0cve9pc",
+                "title": {
+                  "desktop": "Con hãy tích vào ô đúng hoặc sai cho mỗi câu (khẳng định)  dưới đây."
+                },
+                "name": "Câu hỏi đúng sai dạng cột",
+                "type": 5,
+                "content_question": [
+                  {
+                    "type": "html",
+                    "content": "<p>Khẳng định n&agrave;o <strong>đ&uacute;ng</strong>, khẳng định n&agrave;o <strong>sai</strong>?</p>"
+                  }
+                ],
+                "options": [
+                  {
+                    "content": "<p>C&aacute;i thang đ&oacute; c&oacute; 8 bậc</p>",
+                    "answer": true
+                  },
+                  {
+                    "content": "<p>Chiều d&agrave;i thanh gỗ m&agrave; người đ&oacute; cần mua l&agrave; 304 cm, giả sử chiều d&agrave;i c&aacute;c mối nối (phần gỗ bị cắt th&agrave;nh m&ugrave;n cưa) l&agrave; kh&ocirc;ng đ&aacute;ng kể</p>",
+                    "answer": true
+                  }
+                ],
+                "sub_quizzes": "clhu23xaw001c3578t0cve9pc"
+              },
+              "idx": 166893,
+              "created_date": "2023-05-19T04:27:37.546Z",
+              "updated_date": "2023-12-12T04:12:06.402Z",
+              "state": 4,
+              "total_question": 20459,
+              "id": "clhu23xaw001c3578t0cve9pc",
+              "question_child": {
+                "id": "clhu23xaw001c3578t0cve9pc",
+                "title": {
+                  "desktop": "Con hãy tích vào ô đúng hoặc sai cho mỗi câu (khẳng định)  dưới đây."
+                },
+                "name": "Câu hỏi đúng sai dạng cột",
+                "type": 5,
+                "content_question": [
+                  {
+                    "type": "html",
+                    "content": "<p>Khẳng định n&agrave;o <strong>đ&uacute;ng</strong>, khẳng định n&agrave;o <strong>sai</strong>?</p>"
+                  }
+                ],
+                "options": [
+                  {
+                    "content": "<p>C&aacute;i thang đ&oacute; c&oacute; 8 bậc</p>",
+                    "answer": true
+                  },
+                  {
+                    "content": "<p>Chiều d&agrave;i thanh gỗ m&agrave; người đ&oacute; cần mua l&agrave; 304 cm, giả sử chiều d&agrave;i c&aacute;c mối nối (phần gỗ bị cắt th&agrave;nh m&ugrave;n cưa) l&agrave; kh&ocirc;ng đ&aacute;ng kể</p>",
+                    "answer": true
+                  }
+                ],
+                "sub_quizzes": "clhu23xaw001c3578t0cve9pc"
+              }
+            }
+          ],
+          "quiz": "clq1zno7x000o357f6v8lan6f"
+        },
+        "group_id": "6466fab9d0487344f4031cd8",
+        "order": 17,
+        "sub_order": 1,
+        "idx": 166894,
+        "difficult_degree": null,
+        "related_lesson": null
+      },
+      {
+        "_id": "6468f10224d271a9ac126585",
+        "chapter": {
+          "id": "62d7b8385249027d2ed285a1",
+          "name": "Cấp số nhân"
+        },
+        "parent": {
+          "id": ""
+        },
+        "question_style": {
+          "general": 1,
+          "mobile": 1
+        },
+        "content_type": 2,
+        "question_type": 1,
+        "difficult_degree": 3,
+        "question": {
+          "id": "2",
+          "content": [
+            {
+              "type": "html",
+              "content": "<p>C&oacute; bao nhi&ecirc;u gi&aacute; trị thực của tham số \\(m\\) để phương tr&igrave;nh \\(\\left( {x - 1} \\right)\\left( {x - 3} \\right)\\left( {x - m} \\right) = 0\\) c&oacute; 3 nghiệm ph&acirc;n biệt lập th&agrave;nh cấp số nh&acirc;n tăng?</p>"
+            }
+          ],
+          "answers": [
+            {
+              "id": "3",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "<p>4</p>"
+                }
+              ],
+              "answer_key": "a",
+              "correct": false,
+              "question": "2"
+            },
+            {
+              "id": "4",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "<p>3</p>"
+                }
+              ],
+              "answer_key": "b",
+              "correct": true,
+              "question": "2"
+            },
+            {
+              "id": "5",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "<p>2</p>"
+                }
+              ],
+              "answer_key": "c",
+              "correct": false,
+              "question": "2"
+            },
+            {
+              "id": "6",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "<p>1</p>"
+                }
+              ],
+              "answer_key": "d",
+              "correct": false,
+              "question": "2"
+            }
+          ],
+          "quiz": "1"
+        },
+        "solution_suggesstion": [],
+        "related_lesson": [],
+        "solution_detail": [
+          {
+            "type": "html",
+            "content": "<p>Ta c&oacute;: \\(\\left( {x - 1} \\right)\\left( {x - 3} \\right)\\left( {x - m} \\right) = 0 \\Leftrightarrow \\left[ \\begin{array}{l}x = 1\\\\x = 3\\\\x = m\\end{array} \\right.\\).</p>\n<p>Để phương tr&igrave;nh c&oacute; 3 nghiệm ph&acirc;n biệt th&igrave;: \\({{m}} \\notin \\left\\{ {1\\,;\\,3} \\right\\}\\).</p>\n<p>Trường hợp 1: \\({{m}} &lt; 1 &lt; 3\\).</p>\n<p>Để 3 số \\({{m}}\\,;\\,1\\,;\\,3\\) lập th&agrave;nh cấp số nh&acirc;n tăng th&igrave;: \\({{m}}.3 = {1^2} \\Leftrightarrow {{m}} = \\dfrac{1}{3}\\)</p>\n<p>Cấp số nh&acirc;n tăng đ&oacute; l&agrave;: \\(\\dfrac{1}{3}\\,;\\,1\\,;\\,3\\)</p>\n<p>Trường hợp 2: \\(1 &lt; {{m}} &lt; 3\\).</p>\n<p>Để 3 số \\(1\\,;\\,{{m}}\\,;\\,3\\) lập th&agrave;nh cấp số nh&acirc;n tăng th&igrave;: \\(1.3 = {{{m}}^2} \\Leftrightarrow \\left[ \\begin{array}{l}{{m}} = \\sqrt 3 \\\\{{m}} =&nbsp; - \\sqrt 3 \\end{array} \\right.\\)</p>\n<p>Đối chiếu điều kiện \\(1 &lt; {{m}} &lt; 3\\) ta chọn \\({{m}} = \\sqrt 3 \\).</p>\n<p>Cấp số nh&acirc;n tăng đ&oacute; l&agrave;: \\(1\\,;\\,\\sqrt 3 \\,;3\\)</p>\n<p>Trường hợp 3: \\(1 &lt; 3 &lt; {{m}}\\).</p>\n<p>Để 3 số \\(1\\,;\\,3\\,;\\,{{m}}\\) lập th&agrave;nh cấp số nh&acirc;n tăng th&igrave;: \\(1.\\,{{m}} = {3^2} \\Leftrightarrow {{m}} = 9\\)</p>\n<p>Cấp số nh&acirc;n tăng đ&oacute; l&agrave;: \\(1\\,;\\,3\\,;\\,9\\)</p>\n<p>Vậy \\({{m}} \\in \\left\\{ {\\dfrac{1}{3}\\,;\\,\\sqrt 3 \\,;\\,9} \\right\\}\\) th&igrave; phương tr&igrave;nh \\(\\left( {x - 1} \\right)\\left( {x - 3} \\right)\\left( {x - m} \\right) = 0\\) c&oacute; 3 nghiệm ph&acirc;n biệt lập th&agrave;nh cấp số nh&acirc;n tăng.</p>"
+          }
+        ],
+        "note": [],
+        "group_id": "6468f10224d271a9ac126587",
+        "order": 16,
+        "sub_order": 1,
+        "idx": 166985
+      },
+      {
+        "_id": "645678adafb61c431097a179",
+        "chapter": {
+          "id": "62d7b8385249027d2ed285a1",
+          "name": "Cấp số nhân"
+        },
+        "parent": {
+          "id": ""
+        },
+        "question_style": {
+          "general": 1,
+          "mobile": 1
+        },
+        "content_type": 2,
+        "question_type": 1,
+        "difficult_degree": 3,
+        "question": {
+          "id": "2",
+          "content": [
+            {
+              "type": "html",
+              "content": "<p>Gi&aacute; trị của tổng \\(S = 1 + 11 + 111 + ... + \\underbrace {111...1}_{\\text{n số 1}}\\) l&agrave;</p>"
+            }
+          ],
+          "answers": [
+            {
+              "id": "3",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "<p>\\(\\dfrac{1}{{81}}\\left( {{{10}^{n - 1}} - 1} \\right) - \\dfrac{n}{9}\\).</p>"
+                }
+              ],
+              "answer_key": "a",
+              "correct": false,
+              "question": "2"
+            },
+            {
+              "id": "4",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "<p>\\(\\dfrac{{10}}{{81}}\\left( {{{10}^n} - 1} \\right) - \\dfrac{n}{9}\\).</p>"
+                }
+              ],
+              "answer_key": "b",
+              "correct": true,
+              "question": "2"
+            },
+            {
+              "id": "5",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "<p>\\(\\dfrac{{10}}{{81}}\\left( {{{10}^{n - 1}} - 1} \\right) - \\dfrac{n}{9}\\).</p>"
+                }
+              ],
+              "answer_key": "c",
+              "correct": false,
+              "question": "2"
+            },
+            {
+              "id": "6",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "<p>\\(\\dfrac{{10}}{{81}}\\left( {{{10}^{n - 1}} - 1} \\right) + \\dfrac{n}{9}\\).</p>"
+                }
+              ],
+              "answer_key": "d",
+              "correct": false,
+              "question": "2"
+            }
+          ],
+          "quiz": "1"
+        },
+        "solution_suggesstion": [],
+        "related_lesson": [],
+        "solution_detail": [
+          {
+            "type": "html",
+            "content": "<p>Ta c&oacute; \\(9S = 9 + 99 + 999 + ... + \\underbrace {999...9}_{\\text{n số 9}}\\)</p>\n<p>$=(10-1)+(100-1)+&hellip;+(10^n-1)$</p>\n<p>$=(10+10^2+&hellip;+10^n)-n$</p>\n<p>\\( = \\dfrac{{10({{10}^n} - 1)}}{{10 - 1}} - n = \\dfrac{{10({{10}^n} - 1)}}{9} - n\\)</p>\n<p>\\( \\Rightarrow S = \\dfrac{{10}}{{81}}({10^n} - 1) - \\dfrac{n}{9}\\).</p>"
+          }
+        ],
+        "note": [],
+        "group_id": "645678adafb61c431097a17b",
+        "order": 15,
+        "sub_order": 1,
+        "idx": 166620
+      },
+      {
+        "_id": "6323d6b9985fba098d144859",
+        "chapter": {
+          "id": "62d7b82a5249027d2ed2859f",
+          "name": "Cấp số cộng"
+        },
+        "parent": {
+          "id": ""
+        },
+        "question_style": {
+          "general": 1,
+          "mobile": 1
+        },
+        "content_type": 2,
+        "question_type": 1,
+        "difficult_degree": 3,
+        "question": {
+          "id": "2",
+          "content": [
+            {
+              "type": "html",
+              "content": "<p> Biết 3 góc \\(\\alpha ,\\beta ,\\gamma \\) theo thứ tự tạo thành một cấp số cộng với công sai \\(d = \\dfrac{\\pi }{3}\\). Tính \\(T = \\tan \\alpha .\\tan \\beta &nbsp;+ \\tan \\beta .\\tan \\gamma &nbsp;+ \\tan \\gamma .\\tan \\alpha \\)</p>"
+            }
+          ],
+          "answers": [
+            {
+              "id": "3",
+              "text": [
+                {
+                  "type": "html",
+                  "content": " -1<strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> &nbsp;&nbsp;"
+                }
+              ],
+              "answer_key": "a",
+              "correct": false,
+              "question": "2"
+            },
+            {
+              "id": "4",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "-3<strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> &nbsp;&nbsp;&nbsp;&nbsp;"
+                }
+              ],
+              "answer_key": "b",
+              "correct": true,
+              "question": "2"
+            },
+            {
+              "id": "5",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "3<strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> &nbsp;"
+                }
+              ],
+              "answer_key": "c",
+              "correct": false,
+              "question": "2"
+            },
+            {
+              "id": "6",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "1"
+                }
+              ],
+              "answer_key": "d",
+              "correct": false,
+              "question": "2"
+            }
+          ],
+          "quiz": "1"
+        },
+        "solution_suggesstion": [
+          {
+            "type": "html",
+            "content": "<p>- Áp dụng tính chất của cấp số cộng với công sai d</p><p>- Biến đổi công thức lượng giác</p>"
+          }
+        ],
+        "related_lesson": [],
+        "solution_detail": [
+          {
+            "type": "html",
+            "content": "<p>Do \\(\\alpha ,\\beta ,\\gamma \\) theo thứ tự tự tạo th&agrave;nh 1 cấp số cộng với c&ocirc;ng sai \\(d = \\dfrac{\\pi }{3}\\) \\( \\Rightarrow \\left\\{ \\begin{array}{l}\\alpha &nbsp;= \\beta &nbsp;- \\dfrac{\\pi }{3}\\\\\\gamma &nbsp;= \\beta &nbsp;+ \\dfrac{\\pi }{3}\\end{array} \\right.\\)</p>\n<p>Do \\(\\begin{array}{l}\\tan \\left( {a - b} \\right) = \\dfrac{{\\tan a - \\tan b}}{{1 + \\tan a.\\tan b}}\\\\\\end{array}\\)</p>\n<p>\\(\\begin{array}{l} \\Rightarrow \\tan a.\\tan b = \\dfrac{{\\tan a - \\tan b}}{{\\tan \\left( {a - b} \\right)}} - 1\\\\\\end{array}\\)</p>\n<p>\\(T = \\tan \\beta .\\tan \\left( {\\beta &nbsp;- \\dfrac{\\pi }{3}} \\right)\\) &nbsp;\\( + \\tan \\beta .\\tan \\left( {\\beta &nbsp;+ \\dfrac{\\pi }{3}} \\right)\\)\\(+\\tan \\left( {\\beta &nbsp;+ \\dfrac{\\pi }{3}} \\right).\\tan \\left( {\\beta &nbsp;- \\dfrac{\\pi }{3}} \\right)\\)</p>\n<p>\\( = \\dfrac{{\\tan \\beta &nbsp;- \\tan \\left( {\\beta &nbsp;- \\dfrac{\\pi }{3}} \\right)}}{{\\tan \\dfrac{\\pi }{3}}} - 1 + \\dfrac{{\\tan \\left( {\\beta &nbsp;+ \\dfrac{\\pi }{3}} \\right) - \\tan \\beta }}{{\\tan \\dfrac{\\pi }{3}}} - 1\\)\\( + \\dfrac{{\\tan \\left( {\\beta &nbsp;- \\dfrac{\\pi }{3}} \\right) - \\tan \\left( {\\beta &nbsp;+ \\dfrac{\\pi }{3}} \\right)}}{{\\tan \\left( {\\dfrac{{ - 2\\pi }}{3}} \\right)}} - 1\\)</p>\n<p>\\(\\begin{array}{*{20}{l}}{ = \\dfrac{{\\tan \\beta {\\rm{ \\;}} - \\tan \\left( {\\beta {\\rm{ \\;}} - \\dfrac{\\pi }{3}} \\right)}}{{\\sqrt 3 }} + \\dfrac{{\\tan \\left( {\\beta {\\rm{ \\;}} + \\dfrac{\\pi }{3}} \\right) - \\tan \\beta }}{{\\sqrt 3 }}}\\end{array}\\)\\( + \\dfrac{{\\tan \\left( {\\beta {\\rm{ \\;}} - \\dfrac{\\pi }{3}} \\right) - \\tan \\left( {\\beta {\\rm{ \\;}} + \\dfrac{\\pi }{3}} \\right)}}{{\\sqrt 3 }} - 3 =&nbsp; - 3\\)</p>"
+          }
+        ],
+        "note": [],
+        "group_id": "6323d6b9985fba098d14485b",
+        "order": 9,
+        "sub_order": 1,
+        "idx": 146333
+      },
+      {
+        "_id": "63380aede593a92baab3b936",
+        "chapter": {
+          "id": "62d7b82a5249027d2ed2859f",
+          "name": "Cấp số cộng"
+        },
+        "parent": {
+          "id": ""
+        },
+        "question_style": {
+          "general": 1,
+          "mobile": 1
+        },
+        "content_type": 2,
+        "question_type": 1,
+        "difficult_degree": 3,
+        "question": {
+          "id": "2",
+          "content": [
+            {
+              "type": "html",
+              "content": "<p> An đang tiết kiệm tiền để mua một cây đàn piano có giá 500 đô la. Trong tuần đầu tiền, An tiết kiệm được 56 đô la. Trong mỗi tuần tiếp theo, An đã tiết kiệm được thêm 12 đô la. Hỏi vào tuần thứ bao nhiêu thì An đủ tiền mua cây đàn piano đó?</p>"
+            }
+          ],
+          "answers": [
+            {
+              "id": "3",
+              "text": [
+                {
+                  "type": "html",
+                  "content": " 38."
+                }
+              ],
+              "answer_key": "a",
+              "correct": true,
+              "question": "2"
+            },
+            {
+              "id": "4",
+              "text": [
+                {
+                  "type": "html",
+                  "content": " 37."
+                }
+              ],
+              "answer_key": "b",
+              "correct": false,
+              "question": "2"
+            },
+            {
+              "id": "5",
+              "text": [
+                {
+                  "type": "html",
+                  "content": " 36."
+                }
+              ],
+              "answer_key": "c",
+              "correct": false,
+              "question": "2"
+            },
+            {
+              "id": "6",
+              "text": [
+                {
+                  "type": "html",
+                  "content": " 39."
+                }
+              ],
+              "answer_key": "d",
+              "correct": false,
+              "question": "2"
+            }
+          ],
+          "quiz": "1"
+        },
+        "solution_suggesstion": [
+          {
+            "type": "html",
+            "content": "<p><strong>Bước 1: </strong>Tính số tiền An tiết kiệm được ở tuần thứ hai, tuần thứ ba và suy ra công thức tổng quát để tính số tiền An tiết kiệm được ở tuần thứ \\(n\\).</p><p><strong>Bước 2:</strong> Giải bất phương trình để tìm \\(n\\) và kết luận.</p>"
+          }
+        ],
+        "related_lesson": [],
+        "solution_detail": [
+          {
+            "type": "html",
+            "content": "<p>Ở tuần thứ hai, An tiết kiệm được: 56 + 12 = 68 đô la.</p><p>Ở tuần thứ ba, An tiết kiệm được: 56 + 2.12 = 80 đô la.</p><p>Từ đó, ta suy ra ở tuần thứ \\(n\\), An tiết kiệm được: \\(S = 56 + \\left( {n - 1} \\right).12\\) đô la.</p><p>Theo đề, ta có \\(S = 56 + \\left( {n - 1} \\right).12 \\ge 500\\)</p><p>\\( \\Leftrightarrow 12\\left( {n - 1} \\right) \\ge 444\\)</p><p>\\( \\Leftrightarrow n - 1 \\ge 37\\)</p><p>\\( \\Leftrightarrow n \\ge 38\\).</p><p>Vì \\(n \\in \\mathbb{N}\\) nên ta nhận \\(n = 38\\).</p><p>Vậy nếu tính cả tuần đầu, thì đến tuần thứ 38, An có đủ tiền để mua cây piano đó.</p><p>Vậy ta chọn phương án A.</p>"
+          }
+        ],
+        "note": [],
+        "group_id": "63380aede593a92baab3b938",
+        "order": 11,
+        "sub_order": 1,
+        "idx": 149446
+      },
+      {
+        "_id": "63257e0b985fba098d144d90",
+        "chapter": {
+          "id": "62d7b82a5249027d2ed2859f",
+          "name": "Cấp số cộng"
+        },
+        "parent": {
+          "id": ""
+        },
+        "question_style": {
+          "general": 1,
+          "mobile": 1
+        },
+        "content_type": 2,
+        "question_type": 1,
+        "difficult_degree": 4,
+        "question": {
+          "id": "2",
+          "content": [
+            {
+              "type": "html",
+              "content": "<p>Cho tập hợp \\(A = \\left\\{ {1;2;3..;2000} \\right\\}\\). Hỏi c&oacute; bao nhi&ecirc;u c&aacute;ch chọn đồng thời 5 số đ&ocirc;i một ph&acirc;n biệt \\({x_1},{x_2},...,{x_5}\\) theo thứ tự lập th&agrave;nh một cấp số nh&acirc;n với c&ocirc;ng bội l&agrave; q l&agrave; một số nguy&ecirc;n dương?</p>"
+            }
+          ],
+          "answers": [
+            {
+              "id": "3",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "159 "
+                }
+              ],
+              "answer_key": "a",
+              "correct": false,
+              "question": "2"
+            },
+            {
+              "id": "4",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "160 "
+                }
+              ],
+              "answer_key": "b",
+              "correct": true,
+              "question": "2"
+            },
+            {
+              "id": "5",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "161 "
+                }
+              ],
+              "answer_key": "c",
+              "correct": false,
+              "question": "2"
+            },
+            {
+              "id": "6",
+              "text": [
+                {
+                  "type": "html",
+                  "content": "<p>184</p>"
+                }
+              ],
+              "answer_key": "d",
+              "correct": false,
+              "question": "2"
+            }
+          ],
+          "quiz": "1"
+        },
+        "solution_suggesstion": [
+          {
+            "type": "html",
+            "content": "<p>Chặn khoảng giá trị của công bội q</p><p>Với mỗi trường hợp của q, tìm ra số cách chọn của \\({x_1},{x_2},...,{x_5}\\)</p><p>Vận dụng quy tắc cộng tính được số cách chọn cần tìm.</p>"
+          }
+        ],
+        "related_lesson": [],
+        "solution_detail": [
+          {
+            "type": "html",
+            "content": "<p>Cấp số nh&acirc;n c&oacute; c&ocirc;ng bội q nguy&ecirc;n dương, ta c&oacute;</p>\n<p>\\({x_5} = {q^4}.{x_1} \\Leftrightarrow {q^4} = \\dfrac{{{x_5}}}{{{x_1}}}\\)</p>\n<p>\\(\\left\\{ \\begin{array}{l}{x_5} \\le 2000\\\\1 \\le {x_1}\\end{array} \\right. \\Leftrightarrow {q^4} \\le 2000 \\Leftrightarrow q \\le 6,69 \\Leftrightarrow q \\in \\left\\{ {2;3;4;5;6} \\right\\}\\)</p>\n<p>Với \\(q = 2:\\)\\(\\left\\{ \\begin{array}{l}1 \\le {x_1}\\\\{q^4}.{x_1} \\le 2000\\end{array} \\right. \\Leftrightarrow 1 \\le {x_1} \\le \\dfrac{{2000}}{{{2^4}}} \\Leftrightarrow 1 \\le {x_1} \\le 125\\)</p>\n<p>\\( \\Rightarrow {x_1}\\) c&oacute; 125 c&aacute;ch chọn. C&aacute;c số \\({x_1},{x_2},...,{x_5}\\) mỗi số chỉ c&oacute; duy nhất 1 c&aacute;ch chọn<br />Với \\(q = 3:1 \\le {x_1} \\le \\dfrac{{2000}}{{{3^4}}} \\Leftrightarrow 1 \\le {x_1} \\le 24,7 \\Rightarrow \\) C&oacute; 24 c&aacute;ch chọn</p>\n<p>Với \\(q = 4:1 \\le {x_1} \\le \\dfrac{{2000}}{{{4^4}}} \\Leftrightarrow 1 \\le {x_1} \\le 7,8 \\Rightarrow \\) C&oacute; 7 c&aacute;ch chọn</p>\n<p>Với \\(q = 5:1 \\le {x_1} \\le \\dfrac{{2000}}{{{5^4}}} \\Leftrightarrow 1 \\le {x_1} \\le 3,2 \\Rightarrow \\) C&oacute; 3 c&aacute;ch chọn</p>\n<p>Với \\(q = 6:1 \\le {x_1} \\le \\dfrac{{2000}}{{{6^4}}} \\Leftrightarrow 1 \\le {x_1} \\le 1,5 \\Rightarrow \\) C&oacute; 1 c&aacute;ch chọn</p>\n<p>Tổng c&oacute; 1+3+7+125+24=160 c&aacute;ch chọn.</p>"
+          }
+        ],
+        "note": [],
+        "group_id": "63257e0b985fba098d144d92",
+        "order": 10,
+        "sub_order": 1,
+        "idx": 146511
+      },
+      {
+        "_id": "6552eafa6ad8b19ac380120e",
+        "chapter": {
+          "id": "65743387f98309a809b44224",
+          "name": "[BK] DÃY SỐ ĐIỀN CHỖ TRỐNG"
+        },
+        "parent": {
+          "id": ""
+        },
+        "content_type": 2,
+        "question_type": 2,
+        "question": {
+          "id": "cloxq2zxp000b357ftc2oc27j",
+          "content": [
+            {
+              "type": "html",
+              "content": "<p><span style=\"color: #ffffff;\">Gi&aacute; trị của \\(x\\) thỏa m&atilde;n \\(1 + 6 + 11 + 16 + 21 +&nbsp; \\ldots&nbsp; + x = 970\\) bằng</span></p>"
+            }
+          ],
+          "sub_quizzes": [
+            {
+              "_id": "6552eafa6ad8b19ac3801211",
+              "grade": {
+                "type": 13,
+                "name": "Đánh Giá Năng Lực"
+              },
+              "subject": {
+                "id": "602f38202db069a276f5afe6",
+                "name": "KHO 1 - TOÁN, TƯ DUY LOGIC, PHÂN TÍCH SỐ LIỆU ",
+                "type": 11
+              },
+              "chapter": {
+                "id": "65743387f98309a809b44224",
+                "name": "[BK] DÃY SỐ ĐIỀN CHỖ TRỐNG"
+              },
+              "parent": {
+                "content": [
+                  {
+                    "type": "html",
+                    "content": "<p><span style=\"color: #ffffff;\">Gi&aacute; trị của \\(x\\) thỏa m&atilde;n \\(1 + 6 + 11 + 16 + 21 +&nbsp; \\ldots&nbsp; + x = 970\\) bằng</span></p>"
+                  }
+                ],
+                "id": "6552eafa6ad8b19ac380120e"
+              },
+              "question_style": {
+                "general": 1
+              },
+              "attachment": {
+                "questionFile": "",
+                "solutionDetailFile": "",
+                "audioFile": ""
+              },
+              "analytics": {
+                "correct": 0,
+                "incorrect": 0,
+                "skiped": 0,
+                "total_answer": 0,
+                "percent_false": 0
+              },
+              "is_private": 0,
+              "modified_history": [],
+              "question_type": 5,
+              "difficult_degree": 3,
+              "solution_suggesstion": [
+                {
+                  "type": "html",
+                  "content": "<p>Chứng minh&nbsp;d&atilde;y số \\(1,6,11,16,21, \\ldots ,x\\) l&agrave; cấp số cộng v&agrave; t&igrave;m số hạng đầu, c&ocirc;ng sai.</p>"
+                }
+              ],
+              "related_lesson": [],
+              "solution_detail": [
+                {
+                  "type": "html",
+                  "content": "<p>X&eacute;t d&atilde;y số \\(1,6,11,16,21, \\ldots ,x\\) l&agrave; cấp số cộng c&oacute; số hạng đầu \\({u_1} = 1\\) v&agrave; c&ocirc;ng sai \\(d = 5\\) n&ecirc;n tổng \\(n\\) số hạng đầu ti&ecirc;n của d&atilde;y l&agrave; \\({S_n} = \\dfrac{{n\\left[ {2{u_1} + (n - 1)d} \\right]}}{2} = \\dfrac{{n[2 + 5(n - 1)]}}{2}\\)</p>\n<p>Do đ&oacute; \\(1 + 6 + 11 + 16 + 21 +&nbsp; \\ldots&nbsp; + x = \\dfrac{{n(5n - 3)}}{2} = 970 \\Leftrightarrow 5{n^2} - 3n - 1940 = 0 \\Leftrightarrow n = 20\\).</p>\n<p>Vậy \\(x = {u_n} = {u_1} + (n - 1)d = 1 + (20 - 1) \\cdot 5 = 96\\) l&agrave; gi&aacute; trị cần t&igrave;m.</p>"
+                }
+              ],
+              "note": [],
+              "question": {
+                "id": "cloxs4035001c357fmtmrr0c6",
+                "content": [
+                  {
+                    "type": "html",
+                    "content": "<p>Điền số th&iacute;ch hợp v&agrave;o &ocirc; trống:</p>"
+                  }
+                ],
+                "correct_answer": ["96"],
+                "clean_duplicate_space": true,
+                "case_intensitive": false,
+                "trim_white_space": true,
+                "trim_characters": "",
+                "prefix_break_line": false,
+                "prefix_input": [
+                  {
+                    "type": "html",
+                    "content": "<p>Gi&aacute; trị của \\(x\\) thỏa m&atilde;n \\(1 + 6 + 11 + 16 + 21 +&nbsp; \\ldots&nbsp; + x = 970\\) bằng&nbsp;</p>"
+                  }
+                ],
+                "suffix_break_line": false,
+                "suffix_input": [],
+                "sub_quizzes": "cloxs4035001c357fmtmrr0c6"
+              },
+              "idx": 175414,
+              "created_date": "2023-11-14T03:35:22.137Z",
+              "updated_date": "2023-12-01T07:07:39.647Z",
+              "state": 4,
+              "total_question": 20315,
+              "id": "cloxs4035001c357fmtmrr0c6",
+              "question_child": {
+                "id": "cloxs4035001c357fmtmrr0c6",
+                "content": [
+                  {
+                    "type": "html",
+                    "content": "<p>Điền số th&iacute;ch hợp v&agrave;o &ocirc; trống:</p>"
+                  }
+                ],
+                "correct_answer": ["96"],
+                "clean_duplicate_space": true,
+                "case_intensitive": false,
+                "trim_white_space": true,
+                "trim_characters": "",
+                "prefix_break_line": false,
+                "prefix_input": [
+                  {
+                    "type": "html",
+                    "content": "<p>Gi&aacute; trị của \\(x\\) thỏa m&atilde;n \\(1 + 6 + 11 + 16 + 21 +&nbsp; \\ldots&nbsp; + x = 970\\) bằng&nbsp;</p>"
+                  }
+                ],
+                "suffix_break_line": false,
+                "suffix_input": [],
+                "sub_quizzes": "cloxs4035001c357fmtmrr0c6"
+              }
+            }
+          ],
+          "quiz": "clpxuu7v0000o357f3j7h6mdl"
+        },
+        "group_id": "6552eafa6ad8b19ac3801210",
+        "order": 51,
+        "sub_order": 1,
+        "idx": 175415,
+        "difficult_degree": null,
+        "related_lesson": null
+      },
+      {
+        "_id": "654f2fef4efdcacd83feeeb2",
+        "chapter": {
+          "id": "667cc5147f0e6d6d244ff5ce",
+          "name": "[BK] DÃY SỐ CHỌN NHIỀU ĐÁP ÁN"
+        },
+        "parent": {
+          "id": ""
+        },
+        "content_type": 2,
+        "question_type": 2,
+        "question": {
+          "id": "clotf7kt0000b357m70wik59y",
+          "content": [
+            {
+              "type": "html",
+              "content": "<p>T&iacute;ch v&agrave;o &ocirc; trống trước mỗi đ&aacute;p &aacute;n đ&uacute;ng.</p>"
+            }
+          ],
+          "sub_quizzes": [
+            {
+              "_id": "654f2fef4efdcacd83feeeb5",
+              "grade": {
+                "type": 13,
+                "name": "Đánh Giá Năng Lực"
+              },
+              "subject": {
+                "id": "602f38202db069a276f5afe6",
+                "name": "KHO 1 - TOÁN, TƯ DUY LOGIC, PHÂN TÍCH SỐ LIỆU ",
+                "type": 11
+              },
+              "chapter": {
+                "id": "667cc5147f0e6d6d244ff5ce",
+                "name": "[BK] DÃY SỐ CHỌN NHIỀU ĐÁP ÁN"
+              },
+              "parent": {
+                "content": [
+                  {
+                    "type": "html",
+                    "content": "<p>T&iacute;ch v&agrave;o &ocirc; trống trước mỗi đ&aacute;p &aacute;n đ&uacute;ng.</p>"
+                  }
+                ],
+                "id": "654f2fef4efdcacd83feeeb2"
+              },
+              "question_style": {
+                "general": 1
+              },
+              "attachment": {
+                "questionFile": "",
+                "solutionDetailFile": "",
+                "audioFile": ""
+              },
+              "analytics": {
+                "correct": 0,
+                "incorrect": 0,
+                "skiped": 0,
+                "total_answer": 0,
+                "percent_false": 0
+              },
+              "is_private": 0,
+              "modified_history": [],
+              "question_type": 310,
+              "difficult_degree": 3,
+              "solution_suggesstion": [
+                {
+                  "type": "html",
+                  "content": "<p>&nbsp; &nbsp;</p>"
+                }
+              ],
+              "related_lesson": [],
+              "solution_detail": [
+                {
+                  "type": "html",
+                  "content": "<p>a) Ta c&oacute;: \\({u_n} = \\dfrac{n}{{{n^2} + 1}};{u_{n + 1}} = \\dfrac{{n + 1}}{{{{(n + 1)}^2} + 1}} = \\dfrac{{n + 1}}{{{n^2} + 2n + 2}}\\)</p>\n<p>\\( \\Rightarrow {u_{n + 1}} - {u_n} = \\dfrac{{n + 1}}{{{n^2} + 2n + 2}} - \\dfrac{n}{{{n^2} + 1}} = \\dfrac{{(n + 1)\\left( {{n^2} + 1} \\right) - n\\left( {{n^2} + 2n + 2} \\right)}}{{\\left( {{n^2} + 1} \\right)\\left( {{n^2} + 2n + 2} \\right)}}\\)</p>\n<p>\\( = \\dfrac{{{n^3} + {n^2} + n + 1 - {n^3} - 2{n^2} - 2n}}{{\\left( {{n^2} + 1} \\right)\\left( {{n^2} + 2n + 2} \\right)}} = \\dfrac{{ - {n^2} - n + 1}}{{\\left( {{n^2} + 1} \\right)\\left( {{n^2} + 2n + 2} \\right)}} &lt; 0\\forall n \\ge 1 \\Rightarrow \\left( {{u_n}} \\right)\\) l&agrave; d&atilde;y số giảm.</p>\n<p>b) \\({u_n} = \\dfrac{{\\sqrt {n + 1} - n}}{n} = \\dfrac{{\\sqrt {n + 1} }}{n} - 1 \\Rightarrow {u_{n + 1}} = \\dfrac{{\\sqrt {n + 2} }}{{n + 1}} - 1\\)</p>\n<p>Khi đ&oacute; ta c&oacute;: \\({u_{n + 1}} - {u_n} = \\left( {\\dfrac{{\\sqrt {n + 2} }}{{n + 1}} - 1} \\right) - \\left( {\\dfrac{{\\sqrt {n + 1} }}{n} - 1} \\right) = \\dfrac{{\\sqrt {n + 2} }}{{n + 1}} - \\dfrac{{\\sqrt {n + 1} }}{n} = \\dfrac{{n\\sqrt {n + 2}&nbsp; - (n + 1)\\sqrt {n + 1} }}{{n(n + 1)}}\\)</p>\n<p>Giả sử: \\({u_{n + 1}} - {u_n} &gt; 0 \\Leftrightarrow n\\sqrt {n + 2}&nbsp; - (n + 1)\\sqrt {n + 1}&nbsp; &gt; 0 \\Leftrightarrow n\\sqrt {n + 2}&nbsp; &gt; (n + 1)\\sqrt {n + 1} \\)</p>\n<p>\\( \\Leftrightarrow {n^2}(n + 2) &gt; {(n + 1)^3} \\Leftrightarrow {n^3} + 2{n^2} &gt; {n^3} + 3{n^2} + 3n + 1 \\Leftrightarrow {n^2} + 3n + 1 &lt; 0 \\Rightarrow \\) v&ocirc; l&yacute;.</p>\n<p>Vậy \\({u_{n + 1}} - {u_n} &lt; 0 \\Rightarrow \\left( {{u_n}} \\right)\\) l&agrave; d&atilde;y số giảm.</p>\n<p>c) \\({u_n} = \\dfrac{1}{n} - 2 \\Rightarrow {u_{n + 1}} = \\dfrac{1}{{n + 1}} - 2 \\Rightarrow {u_{n + 1}} - {u_n} = \\left( {\\dfrac{1}{{n + 1}} - 2} \\right) - \\left( {\\dfrac{1}{n} - 2} \\right) = - \\dfrac{1}{{n(n + 1)}} &lt; 0 \\Rightarrow {u_{n + 1}} &lt; {u_n}\\)</p>\n<p>Vậy d&atilde;y số \\(\\left( {{u_n}} \\right)\\) l&agrave; d&atilde;y số giảm.</p>\n<p>d) \\({u_n} = \\dfrac{{n - 1}}{{n + 1}} = 1 - \\dfrac{2}{{n + 1}}\\)</p>\n<p>Khi đ&oacute;: \\({u_{n + 1}} = 1 - \\dfrac{2}{{n + 2}} \\Rightarrow {u_{n + 1}} - {u_n} = \\left( {1 - \\dfrac{2}{{n + 2}}} \\right) - \\left( {1 - \\dfrac{2}{{n + 1}}} \\right) = \\dfrac{2}{{(n + 1)(n + 2)}} &gt; 0 \\Leftrightarrow {u_{n + 1}} &gt; {u_n}\\)</p>\n<p>Vậy d&atilde;y số \\(\\left( {{u_n}} \\right)\\) l&agrave; d&atilde;y số tăng.</p>"
+                }
+              ],
+              "note": [],
+              "question": {
+                "id": "clotqi0te005q357m6iqx2z1f",
+                "title": {
+                  "desktop": "Tích vào ô trước đáp án đúng"
+                },
+                "name": "Câu hỏi lựa chọn nhiều đáp án",
+                "type": 5,
+                "content_question": [
+                  {
+                    "type": "html",
+                    "content": "<p>D&atilde;y số n&agrave;o l&agrave; d&atilde;y số giảm?</p>"
+                  }
+                ],
+                "options": [
+                  {
+                    "content": "<p>\\({u_n} = \\dfrac{n}{{{n^2} + 1}}\\)</p>",
+                    "answer": true
+                  },
+                  {
+                    "content": "<p>\\({u_n} = \\dfrac{{\\sqrt {n + 1}&nbsp; - n}}{n}\\)</p>",
+                    "answer": true
+                  },
+                  {
+                    "content": "<p>\\({u_n} = \\dfrac{1}{n} - 2\\)</p>",
+                    "answer": true
+                  },
+                  {
+                    "content": "<p>\\({u_n} = \\dfrac{{n - 1}}{{n + 1}}\\)</p>",
+                    "answer": false
+                  }
+                ],
+                "sub_quizzes": "clotqi0te005q357m6iqx2z1f"
+              },
+              "idx": 175143,
+              "created_date": "2023-11-11T07:40:31.142Z",
+              "updated_date": "2024-05-15T08:50:56.156Z",
+              "state": 4,
+              "total_question": 23090,
+              "id": "clotqi0te005q357m6iqx2z1f",
+              "question_child": {
+                "id": "clotqi0te005q357m6iqx2z1f",
+                "title": {
+                  "desktop": "Tích vào ô trước đáp án đúng"
+                },
+                "name": "Câu hỏi lựa chọn nhiều đáp án",
+                "type": 5,
+                "content_question": [
+                  {
+                    "type": "html",
+                    "content": "<p>D&atilde;y số n&agrave;o l&agrave; d&atilde;y số giảm?</p>"
+                  }
+                ],
+                "options": [
+                  {
+                    "content": "<p>\\({u_n} = \\dfrac{n}{{{n^2} + 1}}\\)</p>",
+                    "answer": true
+                  },
+                  {
+                    "content": "<p>\\({u_n} = \\dfrac{{\\sqrt {n + 1}&nbsp; - n}}{n}\\)</p>",
+                    "answer": true
+                  },
+                  {
+                    "content": "<p>\\({u_n} = \\dfrac{1}{n} - 2\\)</p>",
+                    "answer": true
+                  },
+                  {
+                    "content": "<p>\\({u_n} = \\dfrac{{n - 1}}{{n + 1}}\\)</p>",
+                    "answer": false
+                  }
+                ],
+                "sub_quizzes": "clotqi0te005q357m6iqx2z1f"
+              }
+            }
+          ],
+          "quiz": "clxwmaogu000o357jvrgwaxdu"
+        },
+        "group_id": "654f2fef4efdcacd83feeeb4",
+        "order": 22,
+        "sub_order": 1,
+        "idx": 175144,
+        "difficult_degree": null,
+        "related_lesson": null
+      },
+      {
+        "_id": "65d86360504db4532bec36d1",
+        "chapter": {
+          "id": "65743759f98309a809b4424a",
+          "name": "[BK] DÃY SỐ ĐIỀN NHIỀU Ô TRỐNG"
+        },
+        "parent": {
+          "id": ""
+        },
+        "content_type": 2,
+        "question_type": 2,
+        "question": {
+          "id": "clsyfwy32000b357g1qqodvi0",
+          "content": [
+            {
+              "type": "html",
+              "content": "<p>Cho \\(1,x,9,y\\) theo thứ tự lập th&agrave;nh một cấp số cộng.</p>"
+            }
+          ],
+          "sub_quizzes": [
+            {
+              "id": "clsyfwy32000c357gsjmft704",
+              "chapter": {
+                "id": ""
+              },
+              "question_type": 25,
+              "difficult_degree": 2,
+              "question_style": {
+                "general": 1
+              },
+              "solution_suggesstion": [
+                {
+                  "type": "html",
+                  "content": "<p>Sử dụng t&iacute;nh chất cấp số cộng.</p>"
+                }
+              ],
+              "related_lesson": [],
+              "solution_detail": [
+                {
+                  "type": "html",
+                  "content": "<p>\\(1,x,9,y\\) theo thứ tự lập th&agrave;nh một cấp số cộng n&ecirc;n ta c&oacute; hệ:</p>\n<p>\\(\\left\\{ \\begin{array}{l}2x = 1 + 9\\\\2.9 = x + y\\end{array} \\right. \\Leftrightarrow \\left\\{ \\begin{array}{l}x = 5\\\\y = 13\\end{array} \\right.\\)</p>"
+                }
+              ],
+              "note": [],
+              "attachment": {
+                "questionFile": "",
+                "solutionDetailFile": "",
+                "audioFile": ""
+              },
+              "question_child": {
+                "id": "clsyfxbtc001d357gv10f8i95",
+                "content": [
+                  {
+                    "type": "html",
+                    "content": "<p>Khi đ&oacute;</p>"
+                  }
+                ],
+                "answers_empty": [
+                  {
+                    "prefix_input": [
+                      {
+                        "type": "html",
+                        "content": "<p>\\(x =\\)&nbsp;&nbsp;</p>"
+                      }
+                    ],
+                    "prefix_break_line": false,
+                    "suffix_break_line": false,
+                    "suffix_input": [],
+                    "correct_answer": ["5"],
+                    "clean_duplicate_space": true,
+                    "case_intensitive": false,
+                    "trim_white_space": true,
+                    "break_line_next_empty": false
+                  },
+                  {
+                    "prefix_input": [
+                      {
+                        "type": "html",
+                        "content": "<p>; $y=$&nbsp;&nbsp;</p>"
+                      }
+                    ],
+                    "prefix_break_line": false,
+                    "suffix_break_line": false,
+                    "suffix_input": [],
+                    "correct_answer": ["13"],
+                    "clean_duplicate_space": true,
+                    "case_intensitive": false,
+                    "trim_white_space": true,
+                    "break_line_next_empty": false
+                  }
+                ],
+                "sub_quizzes": "clsyfwy32000c357gsjmft704"
+              },
+              "question": "clsyfwy32000b357g1qqodvi0",
+              "_id": "65d86360504db4532bec36d4",
+              "idx": 183396
+            }
+          ],
+          "quiz": "clsyfwy32000a357gjmgiiiak"
+        },
+        "group_id": "65d86360504db4532bec36d3",
+        "order": 7,
+        "sub_order": 1,
+        "idx": 183397
+      },
+      {
+        "_id": "65fcf10bc4b04815c7ba11bb",
+        "chapter": {
+          "id": "65743759f98309a809b4424a",
+          "name": "[BK] DÃY SỐ ĐIỀN NHIỀU Ô TRỐNG"
+        },
+        "parent": {
+          "id": ""
+        },
+        "content_type": 2,
+        "question_type": 2,
+        "question": {
+          "id": "clu224hjf000b357gu84qoa2j",
+          "content": [
+            {
+              "type": "html",
+              "content": "<p>Cho d&atilde;y số \\(\\left( {{u_n}} \\right)\\) thoả m&atilde;n \\(\\left( {{u_n}} \\right):\\left\\{ {\\begin{array}{*{20}{c}}{{u_1} = 3;{u_2} = 12}\\\\{{u_{n + 1}} = \\sqrt[n]{{{u_1} \\cdot {u_2} \\cdot&nbsp; \\ldots&nbsp; \\cdot {u_n}}}}\\end{array}} \\right.\\)</p>"
+            }
+          ],
+          "sub_quizzes": [
+            {
+              "id": "clu224hjf000c357gikg28a78",
+              "chapter": {
+                "id": ""
+              },
+              "question_type": 25,
+              "difficult_degree": 3,
+              "question_style": {
+                "general": 1
+              },
+              "solution_suggesstion": [
+                {
+                  "type": "html",
+                  "content": "<p>Chứng minh bằng quy nạp \\({u_n} = 6\\forall n \\ge 3\\).</p>"
+                }
+              ],
+              "related_lesson": [],
+              "solution_detail": [
+                {
+                  "type": "html",
+                  "content": "<p>Ta c&oacute;: \\({u_3} = \\sqrt {3.12}&nbsp; = 6;{u_4} = \\sqrt[3]{{3.12.6}} = 6,\\) \\({u_5} = \\sqrt[4]{{3.12.6.6}} = 6\\).</p>\n<p>Ta chứng minh \\({u_n} = 6\\forall n \\ge 3\\).</p>\n<p>Giả sử \\({u_k} = 6\\) từ \\(k = 3\\) tới \\(k = n\\). Khi đ&oacute; trong d&atilde;y c&oacute; \\(n - 2\\) số hạng bằng 6.</p>\n<p>Khi đ&oacute; ta c&oacute;: \\({u_{n + 1}} = \\sqrt[n]{{{u_1}.{u_2} \\ldots {u_n}}} = \\sqrt[n]{{3.12.\\underbrace {6 \\ldots 6}_{n - 2\\;\\text{số}\\;6}}} = 6\\)</p>\n<p>\\( \\Rightarrow \\)\\({u_n} = 6\\forall n \\ge 3\\).</p>\n<p>Vậy \\({u_4} = {u_{2023}} = 6\\).</p>"
+                }
+              ],
+              "note": [],
+              "attachment": {
+                "questionFile": "",
+                "solutionDetailFile": "",
+                "audioFile": ""
+              },
+              "question_child": {
+                "id": "clu225jmy001e357g14q2m4tn",
+                "content": [
+                  {
+                    "type": "html",
+                    "content": "<p>Điền đ&aacute;p &aacute;n đ&uacute;ng v&agrave;o chỗ chấm:</p>"
+                  }
+                ],
+                "answers_empty": [
+                  {
+                    "prefix_input": [
+                      {
+                        "type": "html",
+                        "content": "<p>\\({u_4} = \\)&nbsp;</p>"
+                      }
+                    ],
+                    "prefix_break_line": false,
+                    "suffix_break_line": false,
+                    "suffix_input": [],
+                    "correct_answer": ["6"],
+                    "clean_duplicate_space": true,
+                    "case_intensitive": false,
+                    "trim_white_space": true,
+                    "break_line_next_empty": true
+                  },
+                  {
+                    "prefix_input": [
+                      {
+                        "type": "html",
+                        "content": "<p>\\({u_2023} = \\)&nbsp;</p>"
+                      }
+                    ],
+                    "prefix_break_line": false,
+                    "suffix_break_line": false,
+                    "suffix_input": [],
+                    "correct_answer": ["6"],
+                    "clean_duplicate_space": true,
+                    "case_intensitive": false,
+                    "trim_white_space": true,
+                    "break_line_next_empty": false
+                  }
+                ],
+                "sub_quizzes": "clu224hjf000c357gikg28a78"
+              },
+              "question": "clu224hjf000b357gu84qoa2j",
+              "_id": "65fcf10bc4b04815c7ba11be",
+              "idx": 185532
+            }
+          ],
+          "quiz": "clu224hjf000a357gdk4nwzmp"
+        },
+        "group_id": "65fcf10bc4b04815c7ba11bd",
+        "order": 8,
+        "sub_order": 1,
+        "idx": 185533
+      },
+      {
+        "_id": "6471c2e322c72c5e486964b3",
+        "chapter": {
+          "id": "65743387f98309a809b44224",
+          "name": "[BK] DÃY SỐ ĐIỀN CHỖ TRỐNG"
+        },
+        "parent": {
+          "id": ""
+        },
+        "content_type": 2,
+        "question_type": 2,
+        "question": {
+          "id": "cli46qu6z000b357a48z8320d",
+          "content": [
+            {
+              "type": "html",
+              "content": "<p>Cho d&atilde;y số \\(({u_n})\\) được x&aacute;c định bởi \\(\\left\\{ \\begin{array}{l}{u_1} = 2019\\\\{u_n} =&nbsp; - \\dfrac{{2019}}{n}({u_1} + {u_2} + {u_3} + ... + {u_{n - 1}}),\\,n &gt; 1\\end{array} \\right.\\).</p>"
+            }
+          ],
+          "sub_quizzes": [
+            {
+              "_id": "6471c2e322c72c5e486964b6",
+              "grade": {
+                "type": 13,
+                "name": "Đánh Giá Năng Lực"
+              },
+              "subject": {
+                "id": "602f38202db069a276f5afe6",
+                "name": "KHO 1 - TOÁN, TƯ DUY LOGIC, PHÂN TÍCH SỐ LIỆU ",
+                "type": 11
+              },
+              "chapter": {
+                "id": "65743387f98309a809b44224",
+                "name": "[BK] DÃY SỐ ĐIỀN CHỖ TRỐNG"
+              },
+              "parent": {
+                "content": [
+                  {
+                    "type": "html",
+                    "content": "<p>Cho d&atilde;y số \\(({u_n})\\) được x&aacute;c định bởi \\(\\left\\{ \\begin{array}{l}{u_1} = 2019\\\\{u_n} =&nbsp; - \\dfrac{{2019}}{n}({u_1} + {u_2} + {u_3} + ... + {u_{n - 1}}),\\,n &gt; 1\\end{array} \\right.\\).</p>"
+                  }
+                ],
+                "id": "6471c2e322c72c5e486964b3"
+              },
+              "question_style": {
+                "general": 1
+              },
+              "attachment": {
+                "questionFile": "",
+                "solutionDetailFile": "",
+                "audioFile": ""
+              },
+              "analytics": {
+                "correct": 0,
+                "incorrect": 0,
+                "skiped": 0,
+                "total_answer": 0,
+                "percent_false": 0
+              },
+              "is_private": 0,
+              "modified_history": [],
+              "question_type": 5,
+              "difficult_degree": 4,
+              "solution_suggesstion": [
+                {
+                  "type": "html",
+                  "content": "<p>Chứng minh&nbsp;\\(\\dfrac{1}{{k + 1}}C_n^k \\)\\( = \\dfrac{1}{{n + 1}} \\cdot C_{n + 1}^{k + 1}\\)</p>\n<p>Sau đ&oacute; chứng minh \\({u_n} = \\dfrac{{n - 2020}}{n}{u_{n - 1}}\\)</p>"
+                }
+              ],
+              "related_lesson": [],
+              "solution_detail": [
+                {
+                  "type": "html",
+                  "content": "<p>Từ giả thiết ta c&oacute; \\(n{u_n} =&nbsp; - 2019\\left( {{u_1} + {u_2} + {u_3} +&nbsp; \\ldots&nbsp; + {u_{n - 2}}} \\right) - 2019{u_{n - 1}}\\)</p>\n<p>\\( = (n - 1){u_{n - 1}} - 2019{u_{n - 1}} = (n - 2020){u_{n - 1}}\\)\\( \\Rightarrow {u_n} = \\dfrac{{n - 2020}}{n}{u_{n - 1}}\\)</p>\n<p>\\( \\Rightarrow \\left\\{ \\begin{array}{l}{u_2} =&nbsp; - \\dfrac{{2018}}{2}{u_1} =&nbsp; - \\dfrac{1}{2}C_{2018}^1{u_1} =&nbsp; - \\dfrac{1}{2}C_{2018}^1 \\cdot 2019 =&nbsp; - C_{2019}^2\\\\{u_2} = \\dfrac{{2017.2018}}{{2.3}}{u_1} = \\dfrac{1}{3}C_{2018}^2 \\cdot {u_1} = C_{2019}^3\\\\{u_3} =&nbsp; - \\dfrac{{2016.2017.2018}}{{2.3.4}} =&nbsp; - \\dfrac{1}{4}C_{2018}^3{u_1} =&nbsp; - C_{2019}^4\\\\...\\\\{u_{2019}} = \\dfrac{1}{{2019}}C_{2018}^{2018}{u_1} = C_{2019}^{2019}\\end{array} \\right.\\)</p>\n<p>Để l&agrave;m được c&aacute;c bước tr&ecirc;n cần chứng minh:&nbsp;</p>\n<p>&nbsp;\\(\\dfrac{1}{{k + 1}}C_n^k \\)\\( = \\dfrac{1}{{n + 1}} \\cdot C_{n + 1}^{k + 1}\\).</p>\n<p>Ta c&oacute; đẳng thức sau</p>\n<p>\\(\\dfrac{1}{{k + 1}}C_n^k = \\dfrac{1}{{k + 1}} \\cdot \\dfrac{{n!}}{{k! \\cdot (n - k)!}}\\) \\( = \\dfrac{1}{{n + 1}} \\cdot \\dfrac{{(n + 1)!}}{{(k + 1)![(n + 1) - (k + 1)]!}}\\)\\( = \\dfrac{1}{{n + 1}} \\cdot C_{n + 1}^{k + 1}\\)</p>\n<p>Khi đ&oacute; \\(\\dfrac{1}{{k + 1}}C_{2018}^k \\cdot {u_1} = \\dfrac{1}{{2019}}C_{2019}^{k + 1} \\cdot 2019 = C_{2019}^{k + 1}\\)</p>\n<p>Vậy \\( A = 2 \\cdot C_{2019}^1 - {2^2}C_{2019}^2 + {2^3}C_{2019}^3 - {2^4}C_{2019}^4 +&nbsp; \\ldots&nbsp; + {2^{2019}}C_{2019}^{2019} = {(2 - 1)^{2019}} + 1 = 2\\)</p>"
+                }
+              ],
+              "note": [],
+              "question": {
+                "id": "cli5qsdym00oy357ai9d02qdz",
+                "content": [
+                  {
+                    "type": "html",
+                    "content": "<p>&nbsp;&nbsp;</p>"
+                  }
+                ],
+                "correct_answer": ["2"],
+                "clean_duplicate_space": true,
+                "case_intensitive": false,
+                "trim_white_space": true,
+                "trim_characters": "",
+                "prefix_break_line": false,
+                "prefix_input": [
+                  {
+                    "type": "html",
+                    "content": "<p>Gi&aacute; trị của biểu thức \\(A = 2{u_1} + {2^2}{u_2} + ... + {2^{2019}}{u_{2019}}\\) bằng&nbsp;</p>"
+                  }
+                ],
+                "suffix_break_line": false,
+                "suffix_input": [],
+                "sub_quizzes": "cli5qsdym00oy357ai9d02qdz"
+              },
+              "idx": 167118,
+              "created_date": "2023-05-27T08:44:19.288Z",
+              "updated_date": "2023-12-01T07:07:39.647Z",
+              "state": 4,
+              "total_question": 20315,
+              "id": "cli5qsdym00oy357ai9d02qdz",
+              "question_child": {
+                "id": "cli5qsdym00oy357ai9d02qdz",
+                "content": [
+                  {
+                    "type": "html",
+                    "content": "<p>&nbsp;&nbsp;</p>"
+                  }
+                ],
+                "correct_answer": ["2"],
+                "clean_duplicate_space": true,
+                "case_intensitive": false,
+                "trim_white_space": true,
+                "trim_characters": "",
+                "prefix_break_line": false,
+                "prefix_input": [
+                  {
+                    "type": "html",
+                    "content": "<p>Gi&aacute; trị của biểu thức \\(A = 2{u_1} + {2^2}{u_2} + ... + {2^{2019}}{u_{2019}}\\) bằng&nbsp;</p>"
+                  }
+                ],
+                "suffix_break_line": false,
+                "suffix_input": [],
+                "sub_quizzes": "cli5qsdym00oy357ai9d02qdz"
+              }
+            }
+          ],
+          "quiz": "clpxuymd5000o357f9z62a4bb"
+        },
+        "group_id": "6471c2e322c72c5e486964b5",
+        "order": 23,
+        "sub_order": 1,
+        "idx": 167119,
+        "difficult_degree": null,
+        "related_lesson": null
+      }
+    ],
+    "stat_result": {
+      "quiz_165156": true,
+      "quiz_166551": true,
+      "quiz_166892": true,
+      "quiz_137994": true,
+      "quiz_173766": false,
+      "quiz_146713": true,
+      "quiz_175310": true,
+      "quiz_155478": true,
+      "quiz_138080": true,
+      "quiz_166012": true,
+      "quiz_166839": false,
+      "quiz_175397": false,
+      "quiz_169927": false,
+      "quiz_156519": false,
+      "quiz_166893": false,
+      "quiz_166985": false,
+      "quiz_166620": false,
+      "quiz_146333": false,
+      "quiz_149446": false,
+      "quiz_146511": false,
+      "quiz_175414": false,
+      "quiz_175143": false,
+      "quiz_183396": false,
+      "quiz_185532": false,
+      "quiz_167118": false
+    },
+    "created_date": "2024-07-02T04:50:55.246Z",
+    "updated_date": "2024-07-03T07:35:56.761Z",
+    "__v": 0
+  }
+}
