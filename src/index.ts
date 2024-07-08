@@ -17,7 +17,6 @@ import {
   renderFillInTheBlankOptions,
   renderFillInTheBlankQuestions,
 } from "./questions_pattern/fill_in_the_blank.js";
-
 import {
   renderMultipleAnswersQuestions,
   renderMultipleAnswersOptions,
@@ -27,6 +26,12 @@ import {
   renderTrueFalseQuestions,
 } from "./questions_pattern/true_false.js";
 import { renderDragAndDropOptions } from "./questions_pattern/drag_and_drop.js";
+
+import {
+  renderMultipleChoiceAnswers,
+  renderMultipleChoiceSolution,
+} from "./answers_pattern/multiple_choice.js";
+import { renderSubQuizAnswers } from "./answers_pattern/sub_quiz.js";
 
 import { Question, Session, Content } from "./question_type/question_type.js";
 
@@ -66,8 +71,8 @@ var $ = cheerio.load(
       // console.log(sessionData);
       console.log("Getting Exercises...");
       const exerciseHTML = await getExercises(sessionData.data);
-      // console.log("Getting Answers...");
-      // const answersHTML = await getAnswers(sessionData);
+      console.log("Getting Answers...");
+      const answersHTML = await getAnswers(sessionData.data);
 
       console.log("Rendering...");
       await renderHTMLtoLatex(
@@ -75,10 +80,10 @@ var $ = cheerio.load(
         sessionData.data.exercise_sheet.name
       );
 
-      // await renderHTMLtoLatex(
-      //   answersHTML,
-      //   `Đáp án ${sessionData.data.exercise_sheet.name}`
-      // );
+      await renderHTMLtoLatex(
+        answersHTML,
+        `Đáp án ${sessionData.data.exercise_sheet.name}`
+      );
     }
   }
 })();
@@ -96,8 +101,6 @@ async function getToken(username: string, password: string) {
 }
 
 async function getSessionData(session: string, token: string) {
-  // console.log(session);
-
   const data: any = await ky
     .get(
       `https://api-on.tuyensinh247.com/admin/v1/exercise-sheet/session/${session.replace(
@@ -109,7 +112,8 @@ async function getSessionData(session: string, token: string) {
     .json();
   return data;
 }
-
+// will refact later
+// when? idk
 async function getExercises(sessionData: Session) {
   $ = cheerio.load(
     `<h2 class="title">Tài liệu đgnl được render bởi TLKHMPKV</h2><div class="content"></div>`
@@ -222,42 +226,27 @@ async function getExercises(sessionData: Session) {
   return $.html();
 }
 
-async function getAnswers(sessionData: any) {
-  const $ = cheerio.load(
+async function getAnswers(sessionData: Session) {
+  $ = cheerio.load(
     `<h2 class="title">Tài liệu đgnl được render bởi TLKHMPKV</h2><div class="content"></div>`
   );
-
   const $selected = $(".content");
-  $selected.append(`<table></table>`);
-  const $table = $("table");
-  var $row: cheerio.Cheerio<cheerio.Element>;
+  let index: number = 1;
+  const QnAs = sessionData.questions;
+  QnAs.forEach((question: Question) => {
+    switch (question.question_type) {
+      case Question.Type.MULTIPLE_CHOICE:
+        $selected
+          .append(renderMultipleChoiceAnswers(question, index++))
+          .append(renderMultipleChoiceSolution(question));
+        break;
 
-  const QnAs = sessionData.data.questions;
-  var index: number = 1;
-  QnAs.forEach((questionsAndAnswer: any) => {
-    if (index % 10 === 1) {
-      $table.append(`<tr class="row${Math.floor(index / 10) + 1}"></tr>`);
-      $row = $(`.row${Math.floor(index / 10) + 1}`);
+      case Question.Type.SUBQUIZ:
+        $selected.append(renderSubQuizAnswers(question, index++));
+        break;
     }
-    questionsAndAnswer.question.answers.forEach((answer: any) => {
-      if (answer.correct === true) {
-        $row.append(
-          `<td>${index++}. <strong>${answer.answer_key
-            .toString()
-            .toUpperCase()}</strong></td>`
-        );
-      }
-    });
   });
-  index = 1;
-  QnAs.forEach((questionAndAnswer: any) => {
-    $selected.append(
-      `<p><p><strong>Câu ${index++}: </strong></p>${
-        questionAndAnswer.solution_detail[0].content
-      }</p><br>`
-    );
-  });
-  // console.log($.html());
+
   return $.html();
 }
 

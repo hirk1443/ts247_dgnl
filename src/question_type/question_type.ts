@@ -38,6 +38,7 @@ export namespace Question {
 
   type Common = {
     _id: string;
+    solution_detail: Content[];
   };
 
   export type MultipleChoice = Common & {
@@ -75,7 +76,7 @@ export namespace Question {
     question_type: Type.FILL_IN_THE_BLANK;
     question: {
       content: Content[];
-      correct_answer: string[];
+      correct_answer: [];
       prefix_input: Content[];
       suffix_input: Content[];
     };
@@ -88,7 +89,7 @@ export namespace Question {
       answers_empty: {
         correct_answer: string[];
         prefix_input: Content[];
-        suffix_input: Content[];
+        suffix_input: [];
       }[];
     };
   };

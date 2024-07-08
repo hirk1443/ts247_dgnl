@@ -10,6 +10,8 @@ import { renderFillInTheBlankOptions, renderFillInTheBlankQuestions, } from "./q
 import { renderMultipleAnswersQuestions, renderMultipleAnswersOptions, } from "./questions_pattern/multiple_answers.js";
 import { renderTrueFalseOptions, renderTrueFalseQuestions, } from "./questions_pattern/true_false.js";
 import { renderDragAndDropOptions } from "./questions_pattern/drag_and_drop.js";
+import { renderMultipleChoiceAnswers, renderMultipleChoiceSolution, } from "./answers_pattern/multiple_choice.js";
+import { renderSubQuizAnswers } from "./answers_pattern/sub_quiz.js";
 import { Question } from "./question_type/question_type.js";
 var $ = cheerio.load(`<h2 class="title">Tài liệu đgnl được render bởi TLKHMPKV</h2><div class="content"></div>`);
 (async () => {
@@ -42,14 +44,11 @@ var $ = cheerio.load(`<h2 class="title">Tài liệu đgnl được render bởi 
             // console.log(sessionData);
             console.log("Getting Exercises...");
             const exerciseHTML = await getExercises(sessionData.data);
-            // console.log("Getting Answers...");
-            // const answersHTML = await getAnswers(sessionData);
+            console.log("Getting Answers...");
+            const answersHTML = await getAnswers(sessionData.data);
             console.log("Rendering...");
             await renderHTMLtoLatex(exerciseHTML, sessionData.data.exercise_sheet.name);
-            // await renderHTMLtoLatex(
-            //   answersHTML,
-            //   `Đáp án ${sessionData.data.exercise_sheet.name}`
-            // );
+            await renderHTMLtoLatex(answersHTML, `Đáp án ${sessionData.data.exercise_sheet.name}`);
         }
     }
 })();
@@ -65,12 +64,13 @@ async function getToken(username, password) {
     return data.token;
 }
 async function getSessionData(session, token) {
-    // console.log(session);
     const data = await ky
         .get(`https://api-on.tuyensinh247.com/admin/v1/exercise-sheet/session/${session.replace(/[^ -~]+/g, "")}`, { headers: { "x-access-token": token } })
         .json();
     return data;
 }
+// will refact later
+// when? idk
 async function getExercises(sessionData) {
     $ = cheerio.load(`<h2 class="title">Tài liệu đgnl được render bởi TLKHMPKV</h2><div class="content"></div>`);
     const $selected = $(".content");
@@ -155,31 +155,22 @@ async function getExercises(sessionData) {
     return $.html();
 }
 async function getAnswers(sessionData) {
-    const $ = cheerio.load(`<h2 class="title">Tài liệu đgnl được render bởi TLKHMPKV</h2><div class="content"></div>`);
+    $ = cheerio.load(`<h2 class="title">Tài liệu đgnl được render bởi TLKHMPKV</h2><div class="content"></div>`);
     const $selected = $(".content");
-    $selected.append(`<table></table>`);
-    const $table = $("table");
-    var $row;
-    const QnAs = sessionData.data.questions;
-    var index = 1;
-    QnAs.forEach((questionsAndAnswer) => {
-        if (index % 10 === 1) {
-            $table.append(`<tr class="row${Math.floor(index / 10) + 1}"></tr>`);
-            $row = $(`.row${Math.floor(index / 10) + 1}`);
+    let index = 1;
+    const QnAs = sessionData.questions;
+    QnAs.forEach((question) => {
+        switch (question.question_type) {
+            case Question.Type.MULTIPLE_CHOICE:
+                $selected
+                    .append(renderMultipleChoiceAnswers(question, index++))
+                    .append(renderMultipleChoiceSolution(question));
+                break;
+            case Question.Type.SUBQUIZ:
+                $selected.append(renderSubQuizAnswers(question, index++));
+                break;
         }
-        questionsAndAnswer.question.answers.forEach((answer) => {
-            if (answer.correct === true) {
-                $row.append(`<td>${index++}. <strong>${answer.answer_key
-                    .toString()
-                    .toUpperCase()}</strong></td>`);
-            }
-        });
     });
-    index = 1;
-    QnAs.forEach((questionAndAnswer) => {
-        $selected.append(`<p><p><strong>Câu ${index++}: </strong></p>${questionAndAnswer.solution_detail[0].content}</p><br>`);
-    });
-    // console.log($.html());
     return $.html();
 }
 async function renderHTMLtoLatex(HTMLdata, outputName) {
