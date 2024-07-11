@@ -4,13 +4,15 @@ import * as cheerio from "cheerio";
 import prompts from "prompts";
 import { execa } from "execa";
 import ky from "ky";
+import ora from "ora";
 import { renderMultipleChoiceOptions, renderMultipleChoiceQuestions, } from "./questions_pattern/multiple_choice.js";
 import { renderFillInTheBlankMultipleOptions, renderFillInTheBlankMultipleQuestion, } from "./questions_pattern/fill_in_the_blank_mult.js";
-import { renderFillInTheBlankOptions, renderFillInTheBlankQuestions, } from "./questions_pattern/fill_in_the_blank.js";
+import { renderFillInTheBlankOptions, renderFillInTheBlankOptionsAndNotQuiz, renderFillInTheBlankQuestions, renderFillInTheBlankQuestionsAndNotQuiz, } from "./questions_pattern/fill_in_the_blank.js";
 import { renderMultipleAnswersQuestions, renderMultipleAnswersOptions, } from "./questions_pattern/multiple_answers.js";
 import { renderTrueFalseOptions, renderTrueFalseQuestions, } from "./questions_pattern/true_false.js";
 import { renderDragAndDropOptions } from "./questions_pattern/drag_and_drop.js";
 import { renderMultipleChoiceAnswers, renderMultipleChoiceSolution, } from "./answers_pattern/multiple_choice.js";
+import { renderFillInTheBlankSolution, renderFillInTheBlankAnswers, } from "./answers_pattern/fill_the_blank.js";
 import { renderSubQuizAnswers } from "./answers_pattern/sub_quiz.js";
 import { Question } from "./question_type/question_type.js";
 var $ = cheerio.load(`<h2 class="title">Tài liệu đgnl được render bởi TLKHMPKV</h2><div class="content"></div>`);
@@ -28,12 +30,13 @@ var $ = cheerio.load(`<h2 class="title">Tài liệu đgnl được render bởi 
             message: "Password: ",
         },
     ]);
+    let spinner = ora("Logging in...").start();
     const token = await getToken(username, password);
     if (token == undefined) {
-        console.log("Wrong credentials");
+        spinner.fail("Wrong credentials");
     }
     else {
-        console.log("Login Success");
+        spinner.succeed("Login Success");
         while (1) {
             const session = await prompts({
                 type: "text",
@@ -42,26 +45,28 @@ var $ = cheerio.load(`<h2 class="title">Tài liệu đgnl được render bởi 
             });
             const sessionData = await getSessionData(session.url, token);
             // console.log(sessionData);
-            console.log("Getting Exercises...");
             const exerciseHTML = await getExercises(sessionData.data);
-            console.log("Getting Answers...");
             const answersHTML = await getAnswers(sessionData.data);
-            console.log("Rendering...");
             await renderHTMLtoLatex(exerciseHTML, sessionData.data.exercise_sheet.name);
             await renderHTMLtoLatex(answersHTML, `Đáp án ${sessionData.data.exercise_sheet.name}`);
         }
     }
 })();
 async function getToken(username, password) {
-    const data = await ky
-        .post("https://api-on.tuyensinh247.com/admin/v1/login", {
-        json: {
-            username: username.toLowerCase().replace(/[^ -~]+/g, ""),
-            password: password,
-        },
-    })
-        .json();
-    return data.token;
+    try {
+        const data = await ky
+            .post("https://api-on.tuyensinh247.com/admin/v1/login", {
+            json: {
+                username: username.toLowerCase().replace(/[^ -~]+/g, ""),
+                password: password,
+            },
+        })
+            .json();
+        return data.token;
+    }
+    catch (error) {
+        return undefined;
+    }
 }
 async function getSessionData(session, token) {
     const data = await ky
@@ -72,6 +77,7 @@ async function getSessionData(session, token) {
 // will refact later
 // when? idk
 async function getExercises(sessionData) {
+    const spinner = ora();
     $ = cheerio.load(`<h2 class="title">Tài liệu đgnl được render bởi TLKHMPKV</h2><div class="content"></div>`);
     const $selected = $(".content");
     var index = 1;
@@ -83,6 +89,12 @@ async function getExercises(sessionData) {
                 $selected.append(`<p class='answers${index}'></p>`);
                 var $answerParagraph = $(`.answers${index}`);
                 $answerParagraph.append(renderMultipleChoiceOptions(question));
+                break;
+            case Question.Type.FILL_IN_THE_BLANK:
+                $selected.append(renderFillInTheBlankQuestionsAndNotQuiz(question, index++));
+                $selected.append(`<p class='answers${index}'></p>`);
+                var $answerParagraph = $(`.answers${index}`);
+                $answerParagraph.append(renderFillInTheBlankOptionsAndNotQuiz(question));
                 break;
             case Question.Type.SUBQUIZ:
                 question.question.sub_quizzes.forEach((subquiz) => {
@@ -148,7 +160,7 @@ async function getExercises(sessionData) {
                 });
                 break;
             default:
-                console.log(`missing question types in question ${index++}`);
+                spinner.warn(`Missing question types in question ${index++}`);
                 break;
         }
     });
@@ -166,6 +178,11 @@ async function getAnswers(sessionData) {
                     .append(renderMultipleChoiceAnswers(question, index++))
                     .append(renderMultipleChoiceSolution(question));
                 break;
+            case Question.Type.FILL_IN_THE_BLANK:
+                $selected
+                    .append(renderFillInTheBlankAnswers(question, index++))
+                    .append(renderFillInTheBlankSolution(question));
+                break;
             case Question.Type.SUBQUIZ:
                 $selected.append(renderSubQuizAnswers(question, index++));
                 break;
@@ -174,6 +191,7 @@ async function getAnswers(sessionData) {
     return $.html();
 }
 async function renderHTMLtoLatex(HTMLdata, outputName) {
+    const spinner = ora(`Rendering ${outputName}.pdf ...`).start();
     var outputFolder = new URL("../output", import.meta.url);
     await mkdir(outputFolder, { recursive: true }).catch(() => { });
     var tempFile = fileURLToPath(new URL("../output/temp.txt", import.meta.url));
@@ -193,23 +211,24 @@ documentclass: extarticle
 
 ---`);
     await execa `pandoc -r html+tex_math_dollars+tex_math_single_backslash -o ${outputFile} --pdf-engine=xelatex --metadata-file=${metadataFile} ${tempFile}`;
-    console.log(`Exported Successfully: ${outputName}.pdf`);
+    spinner.succeed(`Exported Successfully: ${outputName}.pdf`);
 }
 async function initialSetup() {
+    const spinner = ora("Initializing").start();
     // check install pandoc
     try {
         await execa `pandoc --version`;
-        console.log("Pandoc has been installed!");
+        spinner.succeed("Pandoc has been installed!");
     }
     catch (error) {
-        console.log("Not install Pandoc, installing...");
+        spinner.text = "Not install Pandoc, installing...";
         await execa `winget install --source winget --exact --id JohnMacFarlane.Pandoc`;
-        console.log("Installed Pandoc!");
+        spinner.succeed("Installed Pandoc!");
     }
     //check install miktex
     try {
         await execa `miktex --version`;
-        console.log("Miktex has been installed!");
+        spinner.succeed("Miktex has been installed!");
     }
     catch (error) {
         throw new Error("Not install Miktex, do it urself");

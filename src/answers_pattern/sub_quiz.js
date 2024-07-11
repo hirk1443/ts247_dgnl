@@ -1,6 +1,8 @@
 import { Question } from "../question_type/question_type.js";
+import ora from "ora";
 export function renderSubQuizAnswers(answers, index) {
     let data = `<p><strong>${index}.</strong> Đáp án:</p>`;
+    const spinner = ora();
     answers.question.sub_quizzes.forEach((subquiz) => {
         switch (subquiz.question_type) {
             case Question.Type.FILL_IN_THE_BLANK_MULT:
@@ -23,7 +25,8 @@ export function renderSubQuizAnswers(answers, index) {
                 data += renderDragAndDropOptions(subquiz);
                 break;
             default:
-                data += `<p>${index} là loại khác</p>`;
+                spinner.warn(`Missing answers types in question ${index++}`);
+                // data += `<p>${index} là loại khác</p>`;
                 break;
         }
     });
@@ -150,7 +153,7 @@ function renderSubQuizSolution(solution) {
     });
     return data;
 }
-function renderSolutionCagetory(solution) {
+export function renderSolutionCagetory(solution) {
     let data = "";
     solution.forEach((detail) => {
         switch (detail.type) {
