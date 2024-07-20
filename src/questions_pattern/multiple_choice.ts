@@ -4,19 +4,28 @@ export function renderMultipleChoiceOptions(options: Question.MultipleChoice) {
   var data: string = "";
 
   for (let i = 0; i <= 3; i++) {
-    var answerContent = options.question.answers[i].text[0];
+    var answerContents = options.question.answers[i].text;
+    answerContents.forEach((answerContent) => {
+      try {
+        switch (answerContent.type) {
+          case "html":
+            data += `<strong>${String.fromCharCode(
+              65 + i
+            )}. </strong> ${answerContent.content.replaceAll(
+              /<[^<>]*>/g,
+              ""
+            )}<br>`;
+            break;
 
-    switch (answerContent.type) {
-      case "html":
-        data += `<strong>${String.fromCharCode(
-          65 + i
-        )}. </strong> ${answerContent.content.replaceAll(/<[^<>]*>/g, "")}<br>`;
-        break;
-
-      case "image":
-        data += `<strong>A. </strong> <img src="${answerContent.url}"><br>`;
-        break;
-    }
+          case "image":
+            data += `<strong>A. </strong> <img src="${answerContent.url}"><br>`;
+            break;
+          default:
+            break;
+        }
+      } catch (error) {
+      }
+    });
   }
 
   return data;
