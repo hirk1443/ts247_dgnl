@@ -5,7 +5,7 @@ export function renderTrueFalseQuestions(questions, index) {
     questionsContent.forEach((questionPart) => {
         if (questionPart.type === "html") {
             if (temp++ === 0) {
-                data += `<strong>${index}. </strong>${questionPart.content.replaceAll(/<[^<>]*>/g, "")}`;
+                data += `<strong>${index}. </strong>${questionPart.content}`;
             }
             else {
                 data += questionPart.content;
@@ -20,7 +20,7 @@ export function renderTrueFalseOptions(options) {
     let answers = options.question_child.options;
     answers.forEach((option) => {
         data += "<tr>";
-        data += `<td>${option.content.replaceAll(/<[^<>]*>/g, "")}</td>`;
+        data += `<td>${option.content}</td>`;
         data += "</tr>";
     });
     data += "</table>";

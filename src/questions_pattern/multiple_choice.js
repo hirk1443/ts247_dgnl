@@ -28,7 +28,7 @@ export function renderMultipleChoiceQuestions(questions, index) {
     questionsContent.forEach((questionPart) => {
         if (questionPart.type === "html") {
             if (temp++ === 0) {
-                data += `<strong>${index}. </strong>${questionPart.content.replaceAll(/<[^<>]*>/g, "")}`;
+                data += `<strong>${index}. </strong>${questionPart.content}`;
             }
             else {
                 data += questionPart.content;

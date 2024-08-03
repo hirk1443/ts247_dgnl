@@ -32,7 +32,7 @@ export function renderMultipleAnswersOptions(
   answers.forEach((option) => {
     data += `<strong>${String.fromCharCode(
       65 + index++
-    )}. </strong> ${option.content.replaceAll(/<[^<>]*>/g, "")}<br>`;
+    )}. </strong> ${option.content}<br>`;
   });
 
   return data;

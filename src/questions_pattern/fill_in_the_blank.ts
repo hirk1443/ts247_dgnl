@@ -54,7 +54,7 @@ export function renderFillInTheBlankOptionsAndNotQuiz(
   prefixInputs.forEach((prefix) => {
     switch (prefix.type) {
       case "html":
-        data += `<p>${prefix.content.replaceAll(/<[^<>]*>/g, "")}______`;
+        data += `<p>${prefix.content}______`;
         break;
       default:
         break;
@@ -64,7 +64,7 @@ export function renderFillInTheBlankOptionsAndNotQuiz(
   postfixInput.forEach((postfix) => {
     switch (postfix.type) {
       case "html":
-        data += `${postfix.content.replaceAll(/<[^<>]*>/g, "")}</p>`;
+        data += `${postfix.content}</p>`;
         break;
       default:
         break;
@@ -83,7 +83,7 @@ export function renderFillInTheBlankOptions(
   prefixInputs.forEach((prefix) => {
     switch (prefix.type) {
       case "html":
-        data += `<p>${prefix.content.replaceAll(/<[^<>]*>/g, "")}______`;
+        data += `<p>${prefix.content}______`;
         break;
       default:
         break;
@@ -93,7 +93,7 @@ export function renderFillInTheBlankOptions(
   postfixInput.forEach((postfix) => {
     switch (postfix.type) {
       case "html":
-        data += `${postfix.content.replaceAll(/<[^<>]*>/g, "")}</p>`;
+        data += `${postfix.content}</p>`;
         break;
       default:
         break;

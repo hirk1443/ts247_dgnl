@@ -20,7 +20,7 @@ export function renderMultipleAnswersOptions(options) {
     let index = 0;
     let answers = options.question_child.options;
     answers.forEach((option) => {
-        data += `<strong>${String.fromCharCode(65 + index++)}. </strong> ${option.content.replaceAll(/<[^<>]*>/g, "")}<br>`;
+        data += `<strong>${String.fromCharCode(65 + index++)}. </strong> ${option.content}<br>`;
     });
     return data;
 }

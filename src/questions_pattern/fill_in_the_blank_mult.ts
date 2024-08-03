@@ -14,7 +14,7 @@ export function renderFillInTheBlankMultipleOptions(
     prefixInputs.forEach((prefix) => {
       switch (prefix.type) {
         case "html":
-          data += `<p>${prefix.content.replaceAll(/<[^<>]*>/g, "")}:______</p>`;
+          data += `<p>${prefix.content}:______</p>`;
           break;
         default:
           break;

@@ -43,12 +43,31 @@ var $ = cheerio.load(`<h2 class="title">Tài liệu đgnl được render bởi 
                 name: "url",
                 message: "Session: ",
             });
-            const sessionData = await getSessionData(session.url, token);
-            // console.log(sessionData);
-            const exerciseHTML = await getExercises(sessionData.data);
-            const answersHTML = await getAnswers(sessionData.data);
-            await renderHTMLtoLatex(exerciseHTML, sessionData.data.exercise_sheet.name);
-            await renderHTMLtoLatex(answersHTML, `Đáp án ${sessionData.data.exercise_sheet.name}`);
+            const isExam = await prompts({
+                type: "toggle",
+                name: "isExam",
+                message: "Is this an exam?",
+                initial: true,
+                active: "yes",
+                inactive: "no",
+            });
+            let sessionData, exerciseHTML, answersHTML, documentName;
+            if (isExam.isExam) {
+                sessionData = await getExamSessionData(session.url, token);
+                // console.log(sessionData.question_exam);
+                exerciseHTML = await getExercises(sessionData.session_exam.dgtd_bk_dh);
+                answersHTML = await getAnswers(sessionData.session_exam.dgtd_bk_dh);
+                documentName = sessionData.session_exam.exam.title;
+            }
+            else {
+                sessionData = await getSessionData(session.url, token);
+                // console.log(sessionData);
+                exerciseHTML = await getExercises(sessionData.data);
+                answersHTML = await getAnswers(sessionData.data);
+                documentName = sessionData.data.exercise_sheet.name;
+            }
+            await renderHTMLtoLatex(exerciseHTML.replaceAll("\\limits_", ""), documentName);
+            await renderHTMLtoLatex(answersHTML.replaceAll("\\limits_", ""), `Đáp án ${documentName}`);
         }
     }
 })();
@@ -74,6 +93,12 @@ async function getSessionData(session, token) {
         .json();
     return data;
 }
+async function getExamSessionData(session, token) {
+    const data = await ky
+        .get(`https://api-on.tuyensinh247.com/admin/v1/exam-dgnl/${session.replace(/[^ -~]+/g, "")}`, { headers: { "x-access-token": token } })
+        .json();
+    return data;
+}
 // will refact later
 // when? idk
 async function getExercises(sessionData) {
@@ -82,16 +107,24 @@ async function getExercises(sessionData) {
     const $selected = $(".content");
     var index = 1;
     const QnAs = sessionData.questions;
+    let prevQuestion = [];
     QnAs.forEach((question) => {
+        console.log(prevQuestion);
         switch (question.question_type) {
             case Question.Type.MULTIPLE_CHOICE:
-                $selected.append(renderMultipleChoiceQuestions(question, index++));
+                if (prevQuestion !== question.question.content) {
+                    $selected.append(renderMultipleChoiceQuestions(question, index++));
+                    prevQuestion = question.question.content;
+                }
                 $selected.append(`<p class='answers${index}'></p>`);
                 var $answerParagraph = $(`.answers${index}`);
                 $answerParagraph.append(renderMultipleChoiceOptions(question));
                 break;
             case Question.Type.FILL_IN_THE_BLANK:
-                $selected.append(renderFillInTheBlankQuestionsAndNotQuiz(question, index++));
+                if (prevQuestion !== question.question.content) {
+                    $selected.append(renderFillInTheBlankQuestionsAndNotQuiz(question, index++));
+                    prevQuestion = question.question.content;
+                }
                 $selected.append(`<p class='answers${index}'></p>`);
                 var $answerParagraph = $(`.answers${index}`);
                 $answerParagraph.append(renderFillInTheBlankOptionsAndNotQuiz(question));
@@ -103,7 +136,10 @@ async function getExercises(sessionData) {
                             let fillInTheBlankMultipleQuestionContent = subquiz.question_child.content;
                             subquiz.question_child.content = question.question.content;
                             subquiz.question_child.content.push(...fillInTheBlankMultipleQuestionContent);
-                            $selected.append(renderFillInTheBlankMultipleQuestion(subquiz, index++));
+                            if ((prevQuestion = question.question.content)) {
+                                $selected.append(renderFillInTheBlankMultipleQuestion(subquiz, index++));
+                                prevQuestion = question.question.content;
+                            }
                             $selected.append(`<p class='answers${index}'></p>`);
                             var $answerParagraph = $(`.answers${index}`);
                             $answerParagraph.append(renderFillInTheBlankMultipleOptions(subquiz));
@@ -112,7 +148,10 @@ async function getExercises(sessionData) {
                             let fillInTheBlankQuestionContent = subquiz.question_child.content;
                             subquiz.question_child.content = question.question.content;
                             subquiz.question_child.content.push(...fillInTheBlankQuestionContent);
-                            $selected.append(renderFillInTheBlankQuestions(subquiz, index++));
+                            if ((prevQuestion = question.question.content)) {
+                                $selected.append(renderFillInTheBlankQuestions(subquiz, index++));
+                                prevQuestion = question.question.content;
+                            }
                             $selected.append(`<p class='answers${index}'></p>`);
                             var $answerParagraph = $(`.answers${index}`);
                             $answerParagraph.append(renderFillInTheBlankOptions(subquiz));
@@ -122,7 +161,10 @@ async function getExercises(sessionData) {
                             subquiz.question_child.content_question =
                                 question.question.content;
                             subquiz.question_child.content_question.push(...multipleAnsQuestionContent);
-                            $selected.append(renderMultipleAnswersQuestions(subquiz, index++));
+                            if ((prevQuestion = question.question.content)) {
+                                $selected.append(renderMultipleAnswersQuestions(subquiz, index++));
+                                prevQuestion = question.question.content;
+                            }
                             $selected.append(`<p class='answers${index}'></p>`);
                             var $answerParagraph = $(`.answers${index}`);
                             $answerParagraph.append(renderMultipleAnswersOptions(subquiz));
@@ -132,24 +174,30 @@ async function getExercises(sessionData) {
                             subquiz.question_child.content_question =
                                 question.question.content;
                             subquiz.question_child.content_question.push(...trueFalseQuestionContent);
-                            $selected.append(renderTrueFalseQuestions(subquiz, index++));
+                            if ((prevQuestion = question.question.content)) {
+                                $selected.append(renderTrueFalseQuestions(subquiz, index++));
+                                prevQuestion = question.question.content;
+                            }
                             $selected.append(`<p class='answers${index}'></p>`);
                             var $answerParagraph = $(`.answers${index}`);
                             $answerParagraph.append(renderTrueFalseOptions(subquiz));
                             break;
                         case Question.Type.DRAG_AND_DROP:
                             let temp = 0;
-                            question.question.content.forEach((questionPart) => {
-                                if (questionPart.type === "html") {
-                                    if (temp++ === 0) {
-                                        $selected.append(`<strong>${index}. </strong>${questionPart.content.replaceAll(/<[^<>]*>/g, "")}`);
+                            if ((prevQuestion = question.question.content)) {
+                                question.question.content.forEach((questionPart) => {
+                                    if (questionPart.type === "html") {
+                                        if (temp++ === 0) {
+                                            $selected.append(`<strong>${index}. </strong>${questionPart.content}`);
+                                        }
+                                        else {
+                                            $selected.append(questionPart.content);
+                                        }
                                     }
-                                    else {
-                                        $selected.append(questionPart.content);
-                                    }
-                                }
-                            });
-                            index++;
+                                });
+                                index++;
+                                prevQuestion = question.question.content;
+                            }
                             $selected.append(`<p class='answers${index}'></p>`);
                             var $answerParagraph = $(`.answers${index}`);
                             $answerParagraph.append(renderDragAndDropOptions(subquiz));
@@ -194,7 +242,7 @@ async function renderHTMLtoLatex(HTMLdata, outputName) {
     const spinner = ora(`Rendering ${outputName}.pdf ...`).start();
     var outputFolder = new URL("../output", import.meta.url);
     await mkdir(outputFolder, { recursive: true }).catch(() => { });
-    var tempFile = fileURLToPath(new URL("../output/temp.txt", import.meta.url));
+    var tempFile = fileURLToPath(new URL("../output/temp.html", import.meta.url));
     var metadataFile = fileURLToPath(new URL("../output/metadata.yaml", import.meta.url));
     var outputFile = fileURLToPath(new URL(`../output/${outputName}.pdf`, import.meta.url));
     // do stuff
@@ -210,7 +258,7 @@ fontsize: 14pt
 documentclass: extarticle
 
 ---`);
-    await execa `pandoc -r html+tex_math_dollars+tex_math_single_backslash -o ${outputFile} --pdf-engine=xelatex --metadata-file=${metadataFile} ${tempFile}`;
+    await execa `pandoc -r html+tex_math_dollars+tex_math_single_backslash+tex_math_double_backslash -o ${outputFile} -s --pdf-engine=xelatex --metadata-file=${metadataFile} ${tempFile}`;
     spinner.succeed(`Exported Successfully: ${outputName}.pdf`);
 }
 async function initialSetup() {

@@ -42,10 +42,7 @@ export function renderMultipleChoiceQuestions(
   questionsContent.forEach((questionPart: Content) => {
     if (questionPart.type === "html") {
       if (temp++ === 0) {
-        data += `<strong>${index}. </strong>${questionPart.content.replaceAll(
-          /<[^<>]*>/g,
-          ""
-        )}`;
+        data += `<strong>${index}. </strong>${questionPart.content}`;
       } else {
         data += questionPart.content;
       }
